@@ -1,0 +1,47 @@
+/* Import fonts (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom CSS variables */
+:root {
+  --background: #EEF9E8;
+  --surface: #CFF1BE;
+  --primary: #63C132;
+  --secondary: #81D258;
+  --accent: #A8E28B;
+  --brand: #72CA45;
+  --text: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.8);
+  --font-heading: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Lato", "System UI", sans-serif;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0D1907;
+    --surface: #19310D;
+    --primary: #4B9126;
+    --secondary: #326119;
+    --accent: #264913;
+    --brand: #72CA45;
+    --text: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Semantic color classes for Tailwind-like usage */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.text-brand { color: var(--brand); }
+.text-text { color: var(--text); }
+.text-text-secondary { color: var(--text-secondary); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.bg-brand { background-color: var(--brand); }
+.bg-surface { background-color: var(--surface); }
+.bg-background { background-color: var(--background); }
