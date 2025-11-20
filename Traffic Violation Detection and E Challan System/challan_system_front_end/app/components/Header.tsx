@@ -30,8 +30,8 @@ export default function Header() {
                             height={20}
                         />
                         <a href="tel:+923000250425" className="text-sm lg:text-lg">
-                            +92 300 0250 425
-                        </a>
+                            +92 312 3456 789
+                       </a>
                     </div>
 
                     <div className="flex items-center space-x-1">
@@ -42,7 +42,7 @@ export default function Header() {
                             height={20}
                         />
                         <a href="mailto:itgprogaming42@gmail.com" className="text-sm lg:text-lg">
-                            itgprogaming42@gmail.com
+                            sigmaBoyz67@gmail.com
                         </a>
                     </div>
                 </div>
@@ -51,6 +51,13 @@ export default function Header() {
                 <div className="flex md:hidden items-center space-x-1 flex-shrink-0">
                     <span className="text-xs">+92 300 0250 425</span>
                 </div>
+
+                {/* <div>
+                    <h1>s
+
+                        Shahzaib Ali
+                    </h1>
+                </div> */}
             </div>
         </header>
     );

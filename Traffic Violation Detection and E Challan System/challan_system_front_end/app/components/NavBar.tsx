@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image"; 
 import LoginModal from "./LoginModal";
 
@@ -20,6 +21,7 @@ export default function NavBar({ isSignedIn = false, userName = "" }: NavBarProp
     const menuRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
     const router = useRouter();
+    const pathname = usePathname();
 
     function handleSearch(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -49,6 +51,17 @@ export default function NavBar({ isSignedIn = false, userName = "" }: NavBarProp
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+    // Update active page based on route
+    useEffect(() => {
+        if (pathname === "/") setActivePage("Home");
+        else if (pathname.startsWith("/contact")) setActivePage("Contact");
+        else if (pathname.startsWith("/about")) setActivePage("About");
+        else if (pathname.startsWith("/my-challans")) setActivePage("My Challans");
+        else if (pathname.startsWith("/history")) setActivePage("History");
+        else if (pathname.startsWith("/rules")) setActivePage("Rule");
+        else setActivePage("404 Page");
+    }, [pathname]);
 
     return (
         <nav className="bg-white text-text w-full relative z-50">
