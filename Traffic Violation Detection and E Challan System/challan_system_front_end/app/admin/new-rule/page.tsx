@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useRef } from "react";
 import Header from "@/app/components/Header";
 import AdminNavBar from "../components/AdminNavBar";
 
@@ -16,7 +17,6 @@ interface Rule {
 }
 
 export default function NewRule() {
-  // --- STATE MANAGEMENT ---
   const [rules, setRules] = useState<Rule[]>([
     { id: 1, name: "No Helmet Wearing", fine: 500, description: "Not wearing helmet while riding bike", exemption: "-", startDate: new Date().toISOString().split("T")[0], otherPenalties: "-", status: true },
     { id: 2, name: "Crossing Red Light", fine: 1000, description: "Ignoring traffic signal", exemption: "-", startDate: new Date().toISOString().split("T")[0], otherPenalties: "-", status: true },
@@ -46,12 +46,14 @@ export default function NewRule() {
 
   const [editingRule, setEditingRule] = useState<Rule | null>(null);
 
-  // Mobile Specific State
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  // Default view is 'view' (Edit existing rule) as requested
   const [mobileView, setMobileView] = useState<"add" | "view">("view");
 
-  // --- HANDLERS ---
+  const [search, setSearch] = useState("");
+  const [sortOption, setSortOption] = useState("");
+
+  const sortRef = useRef<HTMLSelectElement>(null);
+
   const handleAddRule = () => {
     if (!newRule.name) return;
     setRules([
@@ -70,10 +72,7 @@ export default function NewRule() {
       startDate: new Date().toISOString().split("T")[0],
       otherPenalties: "",
     });
-    // Optionally switch to view list after adding on mobile
-    if (window.innerWidth < 768) {
-        setMobileView("view");
-    }
+    if (window.innerWidth < 768) setMobileView("view");
   };
 
   const handleEditRule = (updatedRule: Rule) => {
@@ -81,14 +80,41 @@ export default function NewRule() {
     setEditingRule(null);
   };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const filteredRules = useMemo(() => {
+    let data = [...rules];
 
-  const handleMobileNavClick = (view: "add" | "view") => {
-    setMobileView(view);
-    setMobileMenuOpen(false);
-  };
+    if (search.trim() !== "") {
+      const s = search.toLowerCase();
+      data = data.filter(
+        (r) =>
+          r.name.toLowerCase().includes(s) ||
+          r.fine.toString().includes(s)
+      );
+    }
+
+    switch (sortOption) {
+      case "fine-asc":
+        data.sort((a, b) => a.fine - b.fine);
+        break;
+      case "fine-desc":
+        data.sort((a, b) => b.fine - a.fine);
+        break;
+      case "date-asc":
+        data.sort((a, b) => a.startDate.localeCompare(b.startDate));
+        break;
+      case "date-desc":
+        data.sort((a, b) => b.startDate.localeCompare(a.startDate));
+        break;
+      case "name-asc":
+        data.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "name-desc":
+        data.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+    }
+
+    return data;
+  }, [rules, search, sortOption]);
 
   return (
     <>
@@ -97,53 +123,48 @@ export default function NewRule() {
 
       <div className="p-6 bg-background min-h-screen relative">
         
-        {/* --- MOBILE NAVIGATION CONTROLS (Hidden on Desktop/md) --- */}
+        {/* MOBILE NAV */}
         <div className="md:hidden flex justify-between items-center mb-6 border-b pb-4 relative z-20">
-            <h2 className="text-xl font-bold text-text">
-                {mobileView === 'add' ? 'Add New Rule' : 'Existing Rules'}
-            </h2>
-            <div className="relative">
-                <button onClick={toggleMobileMenu} className="focus:outline-none">
-                    <img 
-                        src={mobileMenuOpen ? "/images/menu-close-icon.png" : "/images/dropdown-icon.png"} 
-                        alt="Menu" 
-                        className="w-8 h-8 object-contain"
-                    />
+          <h2 className="text-xl font-bold text-text">
+            {mobileView === "add" ? "Add New Rule" : "Existing Rules"}
+          </h2>
+          <div className="relative">
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              <img
+                src={mobileMenuOpen ? "/images/menu-close-icon.png" : "/images/dropdown-icon.png"}
+                alt="Menu"
+                className="w-8 h-8"
+              />
+            </button>
+
+            {mobileMenuOpen && (
+              <div className="absolute right-0 top-10 w-56 bg-surface border shadow-xl rounded-md overflow-hidden z-30">
+                <button
+                  className={`w-full text-left px-4 py-3 border-b hover:bg-gray-100 ${mobileView === "view" ? "bg-gray-50 font-bold" : ""}`}
+                  onClick={() => { setMobileView("view"); setMobileMenuOpen(false); }}
+                >
+                  Edit Existing Rule
                 </button>
-                
-                {/* Dropdown Menu */}
-                {mobileMenuOpen && (
-                    <div className="absolute right-0 top-10 w-56 bg-surface border shadow-xl rounded-md overflow-hidden z-30">
-                        <button 
-                            className={`w-full text-left px-4 py-3 border-b hover:bg-gray-100 ${mobileView === 'view' ? 'bg-gray-50 font-bold' : ''}`}
-                            onClick={() => handleMobileNavClick("view")}
-                        >
-                            Edit Existing Rule
-                        </button>
-                        <button 
-                            className={`w-full text-left px-4 py-3 hover:bg-gray-100 ${mobileView === 'add' ? 'bg-gray-50 font-bold' : ''}`}
-                            onClick={() => handleMobileNavClick("add")}
-                        >
-                            Add New Rule
-                        </button>
-                    </div>
-                )}
-            </div>
+                <button
+                  className={`w-full text-left px-4 py-3 hover:bg-gray-100 ${mobileView === "add" ? "bg-gray-50 font-bold" : ""}`}
+                  onClick={() => { setMobileView("add"); setMobileMenuOpen(false); }}
+                >
+                  Add New Rule
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
-        {/* --- ADD NEW RULE SECTION --- */}
-        {/* Logic: Hidden on mobile IF view is NOT 'add'. Always Block on Desktop (md) */}
-        <div className={`${mobileView === 'add' ? 'block' : 'hidden'} md:block mb-10`}>
+        {/* ADD NEW RULE */}
+        <div className={`${mobileView === "add" ? "block" : "hidden"} md:block mb-10`}>
           <h2 className="text-2xl font-bold text-text mb-4 hidden md:block">Add the New Rule</h2>
-          
-          {/* Grid: 1 col on mobile (One input per line), 2 cols on md */}
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Name Field - Full width on mobile */}
-            <div className="w-full">
+            <div>
               <label className="block text-text mb-1">New Rule Name</label>
               <input
                 type="text"
-                placeholder="Enter rule name"
                 className="p-2 border rounded bg-surface w-full"
                 value={newRule.name}
                 onChange={(e) => setNewRule({ ...newRule, name: e.target.value })}
@@ -153,7 +174,6 @@ export default function NewRule() {
               <label className="block text-text mb-1">Fine (Rs)</label>
               <input
                 type="number"
-                placeholder="Enter fine amount"
                 className="p-2 border rounded bg-surface w-full"
                 value={newRule.fine}
                 onChange={(e) => setNewRule({ ...newRule, fine: Number(e.target.value) })}
@@ -163,7 +183,6 @@ export default function NewRule() {
               <label className="block text-text mb-1">Description</label>
               <input
                 type="text"
-                placeholder="Enter description"
                 className="p-2 border rounded bg-surface w-full"
                 value={newRule.description}
                 onChange={(e) => setNewRule({ ...newRule, description: e.target.value })}
@@ -173,7 +192,6 @@ export default function NewRule() {
               <label className="block text-text mb-1">Exemption</label>
               <input
                 type="text"
-                placeholder="Enter exemption"
                 className="p-2 border rounded bg-surface w-full"
                 value={newRule.exemption}
                 onChange={(e) => setNewRule({ ...newRule, exemption: e.target.value })}
@@ -184,7 +202,6 @@ export default function NewRule() {
               <input
                 type="date"
                 className="p-2 border rounded bg-surface w-full"
-                min={new Date().toISOString().split("T")[0]}
                 value={newRule.startDate}
                 onChange={(e) => setNewRule({ ...newRule, startDate: e.target.value })}
               />
@@ -193,7 +210,6 @@ export default function NewRule() {
               <label className="block text-text mb-1">Other Penalties</label>
               <input
                 type="text"
-                placeholder="Enter other penalties"
                 className="p-2 border rounded bg-surface w-full"
                 value={newRule.otherPenalties}
                 onChange={(e) => setNewRule({ ...newRule, otherPenalties: e.target.value })}
@@ -208,14 +224,63 @@ export default function NewRule() {
           </button>
         </div>
 
-        {/* --- VIEW/EDIT EXISTING RULES SECTION --- */}
-        {/* Logic: Hidden on mobile IF view is NOT 'view'. Always Block on Desktop (md) */}
-        <div className={`${mobileView === 'view' ? 'block' : 'hidden'} md:block`}>
-          <h2 className="text-2xl font-bold text-text mb-4 hidden md:block">View/Edit Existing Rules</h2>
-          
-          {/* Grid: 1 col on mobile (One card per line), 2 on md, 3 on lg */}
+        {/* VIEW / EDIT EXISTING */}
+        <div className={`${mobileView === "view" ? "block" : "hidden"} md:block`}>
+          <h2 className="text-2xl font-bold text-text mb-4 hidden md:block">
+            View/Edit Existing Rules
+          </h2>
+
+          {/* SEARCH + SORT */}
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
+
+  {/* SEARCH WITH ICON */}
+  <div className="relative w-full md:w-1/2">
+    <img
+      src="/images/search-icon.png"
+      className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 opacity-70"
+      alt="Search"
+    />
+    <input
+      type="text"
+      placeholder="Search by name or fine..."
+      className="pl-10 p-2 border rounded bg-surface w-full"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  </div>
+
+  {/* SORT ICON ONLY */}
+  <div className="relative flex items-center justify-end md:ml-auto mr-2">
+    
+    <select
+      ref={sortRef}
+      className="absolute pointer-events-none"
+      value={sortOption}
+      onChange={(e) => setSortOption(e.target.value)}
+    >
+      <option value="">Default</option>
+      <option value="fine-asc">Fine (ASC)</option>
+      <option value="fine-desc">Fine (DSC)</option>
+      <option value="date-asc">Date Added (ASC)</option>
+      <option value="date-desc">Date Added (DSC)</option>
+      <option value="name-asc">Name (A-Z)</option>
+      <option value="name-desc">Name (Z-A)</option>
+    </select>
+
+    {/* Visible icon button */}
+    <img
+      src="/images/sort-icon.png"
+      className="w-6 h-6 cursor-pointer opacity-80"
+      onClick={() => sortRef.current?.showPicker?.()}
+      alt="Sort"
+    />
+  </div>
+</div>
+
+
+          {/* RULES GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {rules.map((rule) => (
+            {filteredRules.map((rule) => (
               <div
                 key={rule.id}
                 className="p-4 border rounded bg-surface cursor-pointer hover:shadow-lg"
@@ -234,10 +299,9 @@ export default function NewRule() {
           </div>
         </div>
 
-        {/* --- EDIT MODAL --- */}
+        {/* EDIT MODAL */}
         {editingRule && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            {/* Max width and max height handling for small screens */}
+          <div className="fixed inset-0 backdrop-blur-md bg-black/50 flex items-center justify-center z-50 p-4">
             <div className="bg-background p-6 rounded shadow-lg w-full max-w-lg relative max-h-[90vh] overflow-y-auto">
               <button
                 className="absolute top-2 right-2 text-text font-bold text-xl"
@@ -245,17 +309,19 @@ export default function NewRule() {
               >
                 &times;
               </button>
+
               <h2 className="text-xl font-bold mb-4">Edit Rule</h2>
-              
-              {/* Grid: 1 col on mobile (One input per line) */}
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="w-full">
+                <div>
                   <label className="block text-text mb-1">Rule Name</label>
                   <input
                     type="text"
                     className="p-2 border rounded bg-surface w-full"
                     value={editingRule.name}
-                    onChange={(e) => setEditingRule({ ...editingRule, name: e.target.value })}
+                    onChange={(e) =>
+                      setEditingRule({ ...editingRule, name: e.target.value })
+                    }
                   />
                 </div>
                 <div>
@@ -297,7 +363,6 @@ export default function NewRule() {
                     type="date"
                     className="p-2 border rounded bg-surface w-full"
                     value={editingRule.startDate}
-                    min={new Date().toISOString().split("T")[0]}
                     onChange={(e) =>
                       setEditingRule({ ...editingRule, startDate: e.target.value })
                     }
@@ -315,23 +380,17 @@ export default function NewRule() {
                   />
                 </div>
               </div>
-              <div className="mt-4 flex justify-end gap-2">
-                <button
-                  className="px-4 py-2 bg-secondary text-white rounded hover:bg-accent"
-                  onClick={() => setEditingRule(null)}
-                >
-                  Cancel
-                </button>
-                <button
-                  className="px-4 py-2 bg-primary text-white rounded hover:bg-brand"
-                  onClick={() => handleEditRule(editingRule)}
-                >
-                  Save
-                </button>
-              </div>
+
+              <button
+                className="mt-4 px-4 py-2 bg-primary text-white rounded hover:bg-brand"
+                onClick={() => handleEditRule(editingRule)}
+              >
+                Save Changes
+              </button>
             </div>
           </div>
         )}
+
       </div>
     </>
   );

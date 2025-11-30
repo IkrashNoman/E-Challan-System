@@ -94,10 +94,10 @@ export default function AdminNavBar() {
                             ref={menuRef}
                             className="absolute top-full -left-2 sm:-left-5 mt-1 w-36 bg-white border border-gray-300 rounded shadow-lg z-50"
                         >
-                            <Link href="/admin" onClick={() => handlePageChange("Admin")} className="block px-3 py-2 hover:bg-gray-100">Admin</Link>
+                            <Link href="/admin/sent-challan" onClick={() => handlePageChange("Sent Challan")} className="block px-3 py-2 hover:bg-gray-100">Sent Challan</Link>
                             <Link href="/admin/challan" onClick={() => handlePageChange("Challan")} className="block px-3 py-2 hover:bg-gray-100">Challan</Link>
                             <Link href="/admin/new-rule" onClick={() => handlePageChange("New Rules")} className="block px-3 py-2 hover:bg-gray-100">New Rules</Link>
-                            <Link href="/admin/add-member" onClick={() => handlePageChange("Add Other")} className="block px-3 py-2 hover:bg-gray-100">Add Other</Link>
+                            <Link href="/admin/add-other" onClick={() => handlePageChange("Add Other")} className="block px-3 py-2 hover:bg-gray-100">Add Other</Link>
                         </div>
                     )}
                 </div>

@@ -1,5 +1,295 @@
 [
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Bike",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "WebsiteUser",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "Officer",
+        "importPath": "officer.models",
+        "description": "officer.models",
+        "isExtraImport": true,
+        "detail": "officer.models",
+        "documentation": {}
+    },
+    {
+        "label": "Area",
+        "importPath": "officer.models",
+        "description": "officer.models",
+        "isExtraImport": true,
+        "detail": "officer.models",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -25,14 +315,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -46,6 +328,39 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "RegexValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -67,183 +382,426 @@
         "documentation": {}
     },
     {
+        "label": "CenteralManagementConfig",
+        "kind": 6,
+        "importPath": "challan_system_back_end.central_management.apps",
+        "description": "challan_system_back_end.central_management.apps",
+        "peekOfCode": "class CenteralManagementConfig(AppConfig):\n    name = 'central_management'",
+        "detail": "challan_system_back_end.central_management.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.migrations.0001_initial",
+        "description": "challan_system_back_end.challan.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('officer', '0001_initial'),\n        ('users', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Rule',\n            fields=[",
+        "detail": "challan_system_back_end.challan.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "RuleAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.admin",
+        "description": "challan_system_back_end.challan.admin",
+        "peekOfCode": "class RuleAdmin(admin.ModelAdmin):\n    list_display = ('rule_name', 'fine_amount', 'start_date')\n    search_fields = ('rule_name',)\n# Challan model\n@admin.register(Challan)\nclass ChallanAdmin(admin.ModelAdmin):\n    list_display = ('id', 'bike', 'rule', 'officer', 'area', 'status', 'amount_charged', 'due_date')\n    list_filter = ('status', 'officer', 'area')\n    search_fields = ('bike__license_plate', 'officer__name')\n# Challenge (Appeal) model",
+        "detail": "challan_system_back_end.challan.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChallanAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.admin",
+        "description": "challan_system_back_end.challan.admin",
+        "peekOfCode": "class ChallanAdmin(admin.ModelAdmin):\n    list_display = ('id', 'bike', 'rule', 'officer', 'area', 'status', 'amount_charged', 'due_date')\n    list_filter = ('status', 'officer', 'area')\n    search_fields = ('bike__license_plate', 'officer__name')\n# Challenge (Appeal) model\n@admin.register(Challenge)\nclass ChallengeAdmin(admin.ModelAdmin):\n    list_display = ('id', 'challan', 'user', 'status', 'submitted_at', 'reviewed_by')\n    list_filter = ('status', 'reviewed_by')\n    search_fields = ('user__name', 'challan__id')",
+        "detail": "challan_system_back_end.challan.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChallengeAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.admin",
+        "description": "challan_system_back_end.challan.admin",
+        "peekOfCode": "class ChallengeAdmin(admin.ModelAdmin):\n    list_display = ('id', 'challan', 'user', 'status', 'submitted_at', 'reviewed_by')\n    list_filter = ('status', 'reviewed_by')\n    search_fields = ('user__name', 'challan__id')",
+        "detail": "challan_system_back_end.challan.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChallanConfig",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.apps",
+        "description": "challan_system_back_end.challan.apps",
+        "peekOfCode": "class ChallanConfig(AppConfig):\n    name = 'challan'",
+        "detail": "challan_system_back_end.challan.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Rule",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.models",
+        "description": "challan_system_back_end.challan.models",
+        "peekOfCode": "class Rule(models.Model):\n    rule_name = models.CharField(max_length=200, unique=True)\n    description = models.TextField()\n    exemption = models.TextField(null=True, blank=True)\n    fine_amount = models.DecimalField(max_digits=10, decimal_places=2)\n    start_date = models.DateField()\n    other_penalties = models.TextField(null=True, blank=True)\n    created_at = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.rule_name",
+        "detail": "challan_system_back_end.challan.models",
+        "documentation": {}
+    },
+    {
+        "label": "Challan",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.models",
+        "description": "challan_system_back_end.challan.models",
+        "peekOfCode": "class Challan(models.Model):\n    bike = models.ForeignKey(Bike, on_delete=models.CASCADE, related_name=\"challans\")\n    rule = models.ForeignKey(Rule, on_delete=models.CASCADE)\n    officer = models.ForeignKey(Officer, on_delete=models.SET_NULL, null=True)\n    area = models.ForeignKey(Area, on_delete=models.SET_NULL, null=True)\n    challan_date = models.DateTimeField(default=timezone.now)\n    STATUS_CHOICES = [\n        (\"Unpaid\", \"Unpaid\"),\n        (\"Paid\", \"Paid\"),\n        (\"Cancelled\", \"Cancelled\"),",
+        "detail": "challan_system_back_end.challan.models",
+        "documentation": {}
+    },
+    {
+        "label": "Challenge",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.models",
+        "description": "challan_system_back_end.challan.models",
+        "peekOfCode": "class Challenge(models.Model):\n    challan = models.ForeignKey(Challan, on_delete=models.CASCADE, related_name=\"appeals\")\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    reason = models.TextField()\n    evidence_url = models.CharField(max_length=255, null=True, blank=True)\n    STATUS_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Approved\", \"Approved\"),\n        (\"Rejected\", \"Rejected\"),\n    ]",
+        "detail": "challan_system_back_end.challan.models",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.asgi",
-        "description": "challan_system_back_end.challan_system.asgi",
+        "importPath": "challan_system_back_end.challan_system_back_end.asgi",
+        "description": "challan_system_back_end.challan_system_back_end.asgi",
         "peekOfCode": "application = get_asgi_application()",
-        "detail": "challan_system_back_end.challan_system.asgi",
+        "detail": "challan_system_back_end.challan_system_back_end.asgi",
         "documentation": {}
     },
     {
         "label": "BASE_DIR",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-jwy&c9jhqf43tsuvn5#vmd-sf171+c=!$3^eibwh)^)(=u4&s2'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "SECRET_KEY",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-jwy&c9jhqf43tsuvn5#vmd-sf171+c=!$3^eibwh)^)(=u4&s2'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "DEBUG",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "ALLOWED_HOSTS",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'central_management.apps.CenteralManagementConfig',",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "INSTALLED_APPS",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'central_management.apps.CenteralManagementConfig',\n    'users.apps.UsersConfig',\n    'officer.apps.OfficerConfig',",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "MIDDLEWARE",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'challan_system.urls'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'challan_system_back_end.urls'",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "ROOT_URLCONF",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "ROOT_URLCONF = 'challan_system.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "ROOT_URLCONF = 'challan_system_back_end.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "TEMPLATES",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "WSGI_APPLICATION",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'challan_system.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'challan_system_back_end.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "DATABASES",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "AUTH_PASSWORD_VALIDATORS",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "LANGUAGE_CODE",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "TIME_ZONE",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "USE_I18N",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "USE_TZ",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "STATIC_URL",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "DEFAULT_AUTO_FIELD",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.settings",
-        "description": "challan_system_back_end.challan_system.settings",
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
         "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "challan_system_back_end.challan_system.settings",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
     {
         "label": "urlpatterns",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.urls",
-        "description": "challan_system_back_end.challan_system.urls",
+        "importPath": "challan_system_back_end.challan_system_back_end.urls",
+        "description": "challan_system_back_end.challan_system_back_end.urls",
         "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
-        "detail": "challan_system_back_end.challan_system.urls",
+        "detail": "challan_system_back_end.challan_system_back_end.urls",
         "documentation": {}
     },
     {
         "label": "application",
         "kind": 5,
-        "importPath": "challan_system_back_end.challan_system.wsgi",
-        "description": "challan_system_back_end.challan_system.wsgi",
+        "importPath": "challan_system_back_end.challan_system_back_end.wsgi",
+        "description": "challan_system_back_end.challan_system_back_end.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
-        "detail": "challan_system_back_end.challan_system.wsgi",
+        "detail": "challan_system_back_end.challan_system_back_end.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.migrations.0001_initial",
+        "description": "challan_system_back_end.officer.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Area',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('city', models.CharField(max_length=100)),",
+        "detail": "challan_system_back_end.officer.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "AreaAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.admin",
+        "description": "challan_system_back_end.officer.admin",
+        "peekOfCode": "class AreaAdmin(admin.ModelAdmin):\n    list_display = ('city', 'zone', 'sub_area')\n    search_fields = ('city', 'zone', 'sub_area')\n# Register Officer model\n@admin.register(Officer)\nclass OfficerAdmin(admin.ModelAdmin):\n    list_display = ('name', 'rank', 'email', 'status', 'area', 'is_active', 'created_at')\n    list_filter = ('rank', 'status', 'is_active', 'area')\n    search_fields = ('name', 'email')",
+        "detail": "challan_system_back_end.officer.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.admin",
+        "description": "challan_system_back_end.officer.admin",
+        "peekOfCode": "class OfficerAdmin(admin.ModelAdmin):\n    list_display = ('name', 'rank', 'email', 'status', 'area', 'is_active', 'created_at')\n    list_filter = ('rank', 'status', 'is_active', 'area')\n    search_fields = ('name', 'email')",
+        "detail": "challan_system_back_end.officer.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerConfig",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.apps",
+        "description": "challan_system_back_end.officer.apps",
+        "peekOfCode": "class OfficerConfig(AppConfig):\n    name = 'officer'",
+        "detail": "challan_system_back_end.officer.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Area",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.models",
+        "description": "challan_system_back_end.officer.models",
+        "peekOfCode": "class Area(models.Model):\n    city = models.CharField(max_length=100)\n    zone = models.CharField(max_length=100)\n    sub_area = models.CharField(max_length=100)\n    def __str__(self):\n        return f\"{self.city} - {self.zone} - {self.sub_area}\"\nclass Officer(models.Model):\n    RANK_CHOICES = [\n        (\"Constable\", \"Constable\"),\n        (\"Head Constable\", \"Head Constable\"),",
+        "detail": "challan_system_back_end.officer.models",
+        "documentation": {}
+    },
+    {
+        "label": "Officer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.models",
+        "description": "challan_system_back_end.officer.models",
+        "peekOfCode": "class Officer(models.Model):\n    RANK_CHOICES = [\n        (\"Constable\", \"Constable\"),\n        (\"Head Constable\", \"Head Constable\"),\n        (\"ASI\", \"ASI\"),\n        (\"SI\", \"SI\"),\n        (\"Inspector\", \"Inspector\"),\n    ]\n    rank = models.CharField(max_length=30, choices=RANK_CHOICES)\n    name = models.CharField(max_length=100)",
+        "detail": "challan_system_back_end.officer.models",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.migrations.0001_initial",
+        "description": "challan_system_back_end.users.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Bike',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('bike_number', models.CharField(max_length=20, unique=True)),",
+        "detail": "challan_system_back_end.users.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "CitizenAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.admin",
+        "description": "challan_system_back_end.users.admin",
+        "peekOfCode": "class CitizenAdmin(admin.ModelAdmin):\n    list_display = (\"full_name\", \"cnic\", \"email\", \"phone\")\n    search_fields = (\"full_name\", \"cnic\", \"email\")\n# WebsiteUser\n@admin.register(WebsiteUser)\nclass WebsiteUserAdmin(admin.ModelAdmin):\n    list_display = (\"email\", \"phone\", \"is_active\", \"created_at\")\n    search_fields = (\"email\", \"phone\")\n    list_filter = (\"is_active\",)\n# Bike",
+        "detail": "challan_system_back_end.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "WebsiteUserAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.admin",
+        "description": "challan_system_back_end.users.admin",
+        "peekOfCode": "class WebsiteUserAdmin(admin.ModelAdmin):\n    list_display = (\"email\", \"phone\", \"is_active\", \"created_at\")\n    search_fields = (\"email\", \"phone\")\n    list_filter = (\"is_active\",)\n# Bike\n@admin.register(Bike)\nclass BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\", \"stolen_status\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n    list_filter = (\"stolen_status\",)",
+        "detail": "challan_system_back_end.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BikeAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.admin",
+        "description": "challan_system_back_end.users.admin",
+        "peekOfCode": "class BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\", \"stolen_status\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n    list_filter = (\"stolen_status\",)\n# BikeDocument\n@admin.register(BikeDocument)\nclass BikeDocumentAdmin(admin.ModelAdmin):\n    list_display = (\"bike\", \"document_type\", \"uploaded_at\")\n    search_fields = (\"bike__bike_number\", \"document_type\")\n    list_filter = (\"document_type\",)",
+        "detail": "challan_system_back_end.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BikeDocumentAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.admin",
+        "description": "challan_system_back_end.users.admin",
+        "peekOfCode": "class BikeDocumentAdmin(admin.ModelAdmin):\n    list_display = (\"bike\", \"document_type\", \"uploaded_at\")\n    search_fields = (\"bike__bike_number\", \"document_type\")\n    list_filter = (\"document_type\",)\n# UserBike\n@admin.register(UserBike)\nclass UserBikeAdmin(admin.ModelAdmin):\n    list_display = (\"user\", \"bike\", \"verification_status\", \"is_primary\")\n    search_fields = (\"user__email\", \"bike__bike_number\")\n    list_filter = (\"verification_status\", \"is_primary\")",
+        "detail": "challan_system_back_end.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserBikeAdmin",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.admin",
+        "description": "challan_system_back_end.users.admin",
+        "peekOfCode": "class UserBikeAdmin(admin.ModelAdmin):\n    list_display = (\"user\", \"bike\", \"verification_status\", \"is_primary\")\n    search_fields = (\"user__email\", \"bike__bike_number\")\n    list_filter = (\"verification_status\", \"is_primary\")",
+        "detail": "challan_system_back_end.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.apps",
+        "description": "challan_system_back_end.users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    name = 'users'",
+        "detail": "challan_system_back_end.users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Citizen",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.models",
+        "description": "challan_system_back_end.users.models",
+        "peekOfCode": "class Citizen(models.Model):\n    cnic = models.CharField(\n        max_length=15,\n        primary_key=True,\n        validators=[RegexValidator(r\"^\\d{5}-\\d{7}-\\d{1}$\")],\n    )\n    full_name = models.CharField(max_length=100)\n    dob = models.DateField(null=True, blank=True)\n    address = models.TextField()\n    email = models.EmailField(null=True, blank=True)",
+        "detail": "challan_system_back_end.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "WebsiteUser",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.models",
+        "description": "challan_system_back_end.users.models",
+        "peekOfCode": "class WebsiteUser(models.Model):\n    user_id = models.AutoField(primary_key=True)\n    citizen = models.OneToOneField(\n        Citizen,\n        on_delete=models.CASCADE,\n        related_name=\"website_user\"\n    )\n    email = models.EmailField(unique=True)\n    phone = models.CharField(max_length=20)\n    address = models.TextField()",
+        "detail": "challan_system_back_end.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "Bike",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.models",
+        "description": "challan_system_back_end.users.models",
+        "peekOfCode": "class Bike(models.Model):\n    bike_number = models.CharField(max_length=20, unique=True)\n    owner = models.ForeignKey(Citizen, on_delete=models.CASCADE, related_name=\"bikes\")\n    registration_date = models.DateField()\n    STOLEN_CHOICES = [\n        (\"Stolen\", \"Stolen\"),\n        (\"NotStolen\", \"NotStolen\"),\n    ]\n    stolen_status = models.CharField(max_length=20, choices=STOLEN_CHOICES, default=\"NotStolen\")\n    created_at = models.DateTimeField(default=timezone.now)",
+        "detail": "challan_system_back_end.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "BikeDocument",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.models",
+        "description": "challan_system_back_end.users.models",
+        "peekOfCode": "class BikeDocument(models.Model):\n    bike = models.ForeignKey(Bike, on_delete=models.CASCADE, related_name=\"documents\")\n    DOCUMENT_TYPES = [\n        (\"FrontCopy\", \"Front Copy\"),\n        (\"BackCopy\", \"Back Copy\"),\n        (\"RegistrationCard\", \"Registration Card\"),\n        (\"Other\", \"Other\"),\n    ]\n    document_type = models.CharField(max_length=30, choices=DOCUMENT_TYPES)\n    image_url = models.CharField(max_length=255)",
+        "detail": "challan_system_back_end.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserBike",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.models",
+        "description": "challan_system_back_end.users.models",
+        "peekOfCode": "class UserBike(models.Model):\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    bike = models.ForeignKey(Bike, on_delete=models.CASCADE)\n    VERIFICATION_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Verified\", \"Verified\"),\n        (\"Rejected\", \"Rejected\"),\n    ]\n    verification_status = models.CharField(max_length=20, choices=VERIFICATION_CHOICES, default=\"Pending\")\n    official_copy_url = models.CharField(max_length=255, null=True, blank=True)",
+        "detail": "challan_system_back_end.users.models",
         "documentation": {}
     },
     {
@@ -251,7 +809,7 @@
         "kind": 2,
         "importPath": "challan_system_back_end.manage",
         "description": "challan_system_back_end.manage",
-        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'challan_system.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'challan_system_back_end.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "challan_system_back_end.manage",
         "documentation": {}
     },
