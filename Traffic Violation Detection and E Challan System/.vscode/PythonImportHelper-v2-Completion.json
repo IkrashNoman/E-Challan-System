@@ -298,6 +298,14 @@
         "documentation": {}
     },
     {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -307,6 +315,14 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -467,6 +483,54 @@
         "documentation": {}
     },
     {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
         "label": "django.core.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -497,38 +561,6 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "check_password",
-        "importPath": "django.contrib.auth.hashers",
-        "description": "django.contrib.auth.hashers",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.hashers",
-        "documentation": {}
-    },
-    {
-        "label": "make_password",
-        "importPath": "django.contrib.auth.hashers",
-        "description": "django.contrib.auth.hashers",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.hashers",
-        "documentation": {}
-    },
-    {
-        "label": "check_password",
-        "importPath": "django.contrib.auth.hashers",
-        "description": "django.contrib.auth.hashers",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.hashers",
-        "documentation": {}
-    },
-    {
-        "label": "make_password",
-        "importPath": "django.contrib.auth.hashers",
-        "description": "django.contrib.auth.hashers",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.hashers",
         "documentation": {}
     },
     {
@@ -969,6 +1001,51 @@
         "description": "challan_system_back_end.officer.models",
         "peekOfCode": "class Officer(models.Model):\n    RANK_CHOICES = [\n        (\"Constable\", \"Constable\"),\n        (\"Head Constable\", \"Head Constable\"),\n        (\"ASI\", \"ASI\"),\n        (\"SI\", \"SI\"),\n        (\"Inspector\", \"Inspector\"),\n    ]\n    rank = models.CharField(max_length=30, choices=RANK_CHOICES)\n    name = models.CharField(max_length=100)",
         "detail": "challan_system_back_end.officer.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsHighRank",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.permissions",
+        "description": "challan_system_back_end.officer.permissions",
+        "peekOfCode": "class IsHighRank(BasePermission):\n    \"\"\"\n    Only Inspector and SI can create, update or delete officers.\n    \"\"\"\n    def has_permission(self, request, view):\n        user = request.user\n        if not user or not user.is_authenticated:\n            return False\n        allowed = [\"Inspector\", \"SI\"]\n        return getattr(user, \"rank\", None) in allowed",
+        "detail": "challan_system_back_end.officer.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsOfficerLoggedIn",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.permissions",
+        "description": "challan_system_back_end.officer.permissions",
+        "peekOfCode": "class IsOfficerLoggedIn(BasePermission):\n    \"\"\"\n    Any logged-in officer can view.\n    \"\"\"\n    def has_permission(self, request, view):\n        return request.user and request.user.is_authenticated",
+        "detail": "challan_system_back_end.officer.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.serializers",
+        "description": "challan_system_back_end.officer.serializers",
+        "peekOfCode": "class OfficerSerializer(serializers.ModelSerializer):\n    \"\"\"For viewing officer details.\"\"\"\n    class Meta:\n        model = Officer\n        fields = [\n            \"id\",\n            \"rank\",\n            \"name\",\n            \"profile_pic_url\",\n            \"email\",",
+        "detail": "challan_system_back_end.officer.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CreateOfficerSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.serializers",
+        "description": "challan_system_back_end.officer.serializers",
+        "peekOfCode": "class CreateOfficerSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for creating/updating officers.\"\"\"\n    class Meta:\n        model = Officer\n        fields = [\n            \"rank\",\n            \"name\",\n            \"email\",\n            \"password\",         # plain password (later gets hashed)\n            \"area\",",
+        "detail": "challan_system_back_end.officer.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerLoginSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.serializers",
+        "description": "challan_system_back_end.officer.serializers",
+        "peekOfCode": "class OfficerLoginSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    password = serializers.CharField()",
+        "detail": "challan_system_back_end.officer.serializers",
         "documentation": {}
     },
     {

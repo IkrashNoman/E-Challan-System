@@ -9,6 +9,12 @@ class SignupSerializer(serializers.Serializer):
     phone = serializers.CharField()
     password = serializers.CharField(write_only=True)
     confirm_password = serializers.CharField(write_only=True)
+    
+    # --- ADDED FIELDS ---
+    cnic = serializers.CharField()
+    bike_registration_date = serializers.DateField() # Format: YYYY-MM-DD
+    # --------------------
+
     bike_number = serializers.CharField()
     official_copy_url = serializers.CharField()       # File upload later
     cnic_front_url = serializers.CharField()

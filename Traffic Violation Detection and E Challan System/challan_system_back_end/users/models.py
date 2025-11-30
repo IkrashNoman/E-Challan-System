@@ -4,6 +4,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.utils import timezone
 from django.core.validators import RegexValidator
+from django.contrib.auth.hashers import make_password
 
 # -------------------------------------------------------
 # Citizen – real world identity

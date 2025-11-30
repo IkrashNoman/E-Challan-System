@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
@@ -11,12 +11,46 @@ export default function AdminNavBar() {
     const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
     const [searchValue, setSearchValue] = useState<string>("");
     const [activePage, setActivePage] = useState<string>("Home");
+    
+    // --- AUTH STATE ---
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [officerName, setOfficerName] = useState("");
+    const [officerRank, setOfficerRank] = useState("");
 
     const menuRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
     const profileRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
     const pathname = usePathname();
+
+    // --- CHECK AUTH FUNCTION ---
+    const checkAuth = () => {
+        if (typeof window !== "undefined") {
+            const token = localStorage.getItem("officerToken");
+            const name = localStorage.getItem("officerName");
+            const rank = localStorage.getItem("officerRank");
+
+            if (token && name) {
+                setIsLoggedIn(true);
+                setOfficerName(name);
+                setOfficerRank(rank || "Officer");
+            } else {
+                setIsLoggedIn(false);
+                setOfficerName("");
+                setOfficerRank("");
+            }
+        }
+    };
+
+    // Run check on mount
+    useEffect(() => {
+        checkAuth();
+        
+        // Listen for storage changes (e.g. login from another tab)
+        const handleStorageChange = () => checkAuth();
+        window.addEventListener("storage", handleStorageChange);
+        return () => window.removeEventListener("storage", handleStorageChange);
+    }, []);
 
     function handleSearch(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -33,9 +67,25 @@ export default function AdminNavBar() {
     }
 
     function handleLogout() {
+        // Clear all admin auth data
+        localStorage.removeItem("officerToken");
+        localStorage.removeItem("officerRefreshToken");
+        localStorage.removeItem("officerName");
+        localStorage.removeItem("officerRank");
+        
+        setIsLoggedIn(false);
+        setProfileMenuOpen(false);
+        
+        // Redirect to separate login page
+        router.push("/admin/signup"); 
+    }
+
+    function handleLoginRedirect() {
+        // Redirect to separate login page
         router.push("/admin/signup");
     }
 
+    // Close dropdowns on click outside
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (
@@ -63,11 +113,12 @@ export default function AdminNavBar() {
         else if (pathname.startsWith("/admin/challan")) setActivePage("Challan");
         else if (pathname.startsWith("/admin/new-rule")) setActivePage("New Rules");
         else if (pathname.startsWith("/admin/add-member")) setActivePage("Add Other");
+        else if (pathname.startsWith("/admin/add-other")) setActivePage("Add Other");
         else setActivePage("404 Page");
     }, [pathname]);
 
     return (
-        <nav className="bg-white text-text w-full relative z-50">
+        <nav className="bg-white text-text w-full relative z-50 shadow-sm border-b">
             <div className="container mx-auto flex items-center justify-between px-3 py-2">
 
                 {/* LEFT SIDE MENU */}
@@ -115,38 +166,62 @@ export default function AdminNavBar() {
                         <input
                             type="text"
                             placeholder="Search bike number..."
-                            className="w-full px-3 py-1 text-black rounded-md pl-4"
+                            className="w-full px-3 py-1 text-black rounded-md pl-4 outline-none"
                             value={searchValue}
                             onChange={(e) => setSearchValue(e.target.value)}
                         />
                     </div>
                 </form>
 
-                {/* PROFILE */}
+                {/* PROFILE / LOGIN */}
                 <div className="relative ml-4" ref={profileRef}>
-                    <button
-                        onClick={() => setProfileMenuOpen(!profileMenuOpen)}
-                        className="flex items-center space-x-2"
-                    >
-                        <Image
-                            src="/images/user-icon.png"
-                            alt="Profile"
-                            width={32}
-                            height={32}
-                            className="rounded-full"
-                        />
-                        <span className="font-medium">Off ABC</span>
-                    </button>
-
-                    {profileMenuOpen && (
-                        <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-300 rounded shadow-lg z-50">
+                    {isLoggedIn ? (
+                        <>
                             <button
-                                onClick={handleLogout}
-                                className="w-full text-left px-3 py-2 hover:bg-gray-100"
+                                onClick={() => setProfileMenuOpen(!profileMenuOpen)}
+                                className="flex items-center space-x-2 focus:outline-none"
                             >
-                                Logout
+                                {/* PFP LOGIC: First Letter of Name */}
+                                <div className="w-8 h-8 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-700 font-bold text-sm uppercase">
+                                    {officerName ? officerName.charAt(0) : "O"}
+                                </div>
+                                
+                                <div className="flex flex-col text-left leading-tight hidden sm:flex">
+                                    <span className="font-semibold text-sm">{officerName}</span>
+                                    <span className="text-xs text-gray-500">{officerRank}</span>
+                                </div>
                             </button>
-                        </div>
+
+                            {profileMenuOpen && (
+                                <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-300 rounded shadow-lg z-50">
+                                    <div className="px-4 py-2 border-b sm:hidden">
+                                        <p className="font-bold text-sm">{officerName}</p>
+                                        <p className="text-xs text-gray-500">{officerRank}</p>
+                                    </div>
+                                    <button
+                                        onClick={handleLogout}
+                                        className="w-full text-left px-4 py-2 hover:bg-red-50 text-red-600 font-medium text-sm transition-colors"
+                                    >
+                                        Logout
+                                    </button>
+                                </div>
+                            )}
+                        </>
+                    ) : (
+                        // LOGIN BUTTON (Redirects to /admin/login)
+                        <button 
+                            onClick={handleLoginRedirect}
+                            className="flex items-center space-x-2 text-sm font-semibold text-text hover:text-blue-800"
+                        >
+                            <span>SignUp</span>
+                            <Image
+                                src="/images/enter-icon.png"
+                                alt="Signup"
+                                width={24}
+                                height={24}
+                                className="w-6 h-6 rounded-full"
+                            />
+                        </button>
                     )}
                 </div>
             </div>
@@ -165,7 +240,7 @@ export default function AdminNavBar() {
                         <input
                             type="text"
                             placeholder="Search bike number..."
-                            className="w-full px-3 py-1 text-black rounded-md pl-4"
+                            className="w-full px-3 py-1 text-black rounded-md pl-4 outline-none"
                             value={searchValue}
                             onChange={(e) => setSearchValue(e.target.value)}
                         />

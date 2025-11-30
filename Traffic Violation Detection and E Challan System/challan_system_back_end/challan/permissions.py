@@ -29,3 +29,17 @@ class ReadOnlyForAuthenticated(BasePermission):
             return True
 
         return False
+
+class IsOfficer(BasePermission):
+    """Only an authenticated Officer can create a challan."""
+
+    def has_permission(self, request, view):
+        user = request.user
+        return bool(user and user.is_authenticated and hasattr(user, "rank"))
+
+
+class IsChallanOwner(BasePermission):
+    """Only the bike owner (WebsiteUser) can raise or edit appeals."""
+
+    def has_permission(self, request, view):
+        return request.user and request.user.is_authenticated

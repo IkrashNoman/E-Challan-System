@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth.hashers import check_password, make_password
 from rest_framework_simplejwt.tokens import RefreshToken
+from django.db import transaction
 
 from .models import WebsiteUser, Citizen, Bike, UserBike, BikeDocument
 from .serializers import (
@@ -14,7 +15,10 @@ from .permissions import IsAuthenticatedUser
 
 
 def generate_tokens(user):
-    refresh = RefreshToken.for_user(user)
+    # Fix: WebsiteUser uses 'user_id' as PK, but SimpleJWT defaults to 'id'.
+    # We manually build the token and set the claim to avoid AttributeError.
+    refresh = RefreshToken()
+    refresh["user_id"] = user.user_id
     return {
         "access": str(refresh.access_token),
         "refresh": str(refresh)
@@ -28,50 +32,96 @@ def signup(request):
     if not serializer.is_valid():
         return Response(serializer.errors, status=400)
 
+    # Extract validated data
     email = serializer.validated_data["email"]
     phone = serializer.validated_data["phone"]
     password = serializer.validated_data["password"]
+    
+    cnic = serializer.validated_data["cnic"]
+    bike_reg_date = serializer.validated_data["bike_registration_date"]
 
     bike_number = serializer.validated_data["bike_number"]
     official_copy_url = serializer.validated_data["official_copy_url"]
     cnic_front_url = serializer.validated_data["cnic_front_url"]
     cnic_back_url = serializer.validated_data["cnic_back_url"]
 
-    # Create Citizen
-    citizen = Citizen.objects.create(
-        email=email,
-        phone=phone
-    )
+    try:
+        with transaction.atomic():
+            # 1. Handle Citizen (The "Get or Create" Logic)
+            # We check if the citizen exists. If so, we use them. If not, we create them.
+            try:
+                citizen = Citizen.objects.get(cnic=cnic)
+                # Optional: Update email/phone on the citizen record if needed
+                if not citizen.email:
+                    citizen.email = email
+                    citizen.save()
+            except Citizen.DoesNotExist:
+                citizen = Citizen.objects.create(
+                    cnic=cnic,
+                    email=email,
+                    phone=phone,
+                    full_name="User " + cnic, # Placeholder name until profile update
+                    address="Unknown"
+                )
 
-    # Create WebsiteUser
-    user = WebsiteUser.objects.create(
-        citizen=citizen,
-        email=email,
-        phone=phone,
-        address="",
-        password=make_password(password)
-    )
+            # 2. Check if this Citizen already has a Website Account
+            if WebsiteUser.objects.filter(citizen=citizen).exists():
+                return Response(
+                    {"error": "An account is already registered with this CNIC. Please Login."}, 
+                    status=400
+                )
 
-    # Create Bike
-    bike = Bike.objects.create(
-        bike_number=bike_number
-    )
+            # 3. Create WebsiteUser (The Account)
+            user = WebsiteUser.objects.create(
+                citizen=citizen,
+                email=email,
+                phone=phone,
+                address="",
+                password=make_password(password)
+            )
 
-    # Link User + Bike
-    UserBike.objects.create(
-        user=user,
-        bike=bike,
-        official_copy_url=official_copy_url
-    )
+            # 4. Handle Bike
+            # Check if bike exists
+            try:
+                bike = Bike.objects.get(bike_number=bike_number)
+                # If bike exists, ensure the registration date matches or handle conflict
+            except Bike.DoesNotExist:
+                bike = Bike.objects.create(
+                    bike_number=bike_number,
+                    registration_date=bike_reg_date,
+                    owner=citizen 
+                )
 
-    # Save CNIC document copies
-    BikeDocument.objects.create(bike=bike, document_type="FrontCopy", image_url=cnic_front_url)
-    BikeDocument.objects.create(bike=bike, document_type="BackCopy", image_url=cnic_back_url)
+            # 5. Link User + Bike
+            # Check if link already exists to prevent duplicate error
+            if not UserBike.objects.filter(user=user, bike=bike).exists():
+                UserBike.objects.create(
+                    user=user,
+                    bike=bike,
+                    official_copy_url=official_copy_url
+                )
 
-    return Response(
-        {"message": "User created successfully"},
-        status=201
-    )
+            # 6. Save CNIC document copies
+            # We use get_or_create to avoid duplicating documents for the same bike
+            BikeDocument.objects.get_or_create(
+                bike=bike, 
+                document_type="FrontCopy", 
+                defaults={"image_url": cnic_front_url}
+            )
+            BikeDocument.objects.get_or_create(
+                bike=bike, 
+                document_type="BackCopy", 
+                defaults={"image_url": cnic_back_url}
+            )
+
+            return Response(
+                {"message": "User created successfully"},
+                status=201
+            )
+
+    except Exception as e:
+        # Catch unexpected errors to prevent 500 crash without info
+        return Response({"error": str(e)}, status=500)
 
 
 # 2. LOGIN
