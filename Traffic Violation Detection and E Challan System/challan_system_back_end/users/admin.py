@@ -18,10 +18,9 @@ class WebsiteUserAdmin(admin.ModelAdmin):
 # Bike
 @admin.register(Bike)
 class BikeAdmin(admin.ModelAdmin):
-    list_display = ("bike_number", "owner", "registration_date", "stolen_status")
+    list_display = ("bike_number", "owner", "registration_date")
     search_fields = ("bike_number", "owner__full_name")
-    list_filter = ("stolen_status",)
-
+    
 # BikeDocument
 @admin.register(BikeDocument)
 class BikeDocumentAdmin(admin.ModelAdmin):

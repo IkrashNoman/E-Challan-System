@@ -144,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -181,22 +189,6 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -290,6 +282,150 @@
         "documentation": {}
     },
     {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -315,11 +451,11 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "django.urls",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -361,6 +497,46 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
         "documentation": {}
     },
     {
@@ -460,6 +636,87 @@
         "description": "challan_system_back_end.challan.models",
         "peekOfCode": "class Challenge(models.Model):\n    challan = models.ForeignKey(Challan, on_delete=models.CASCADE, related_name=\"appeals\")\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    reason = models.TextField()\n    evidence_url = models.CharField(max_length=255, null=True, blank=True)\n    STATUS_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Approved\", \"Approved\"),\n        (\"Rejected\", \"Rejected\"),\n    ]",
         "detail": "challan_system_back_end.challan.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminOrOfficer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.permissions",
+        "description": "challan_system_back_end.challan.permissions",
+        "peekOfCode": "class IsAdminOrOfficer(BasePermission):\n    \"\"\"\n    Only logged-in users with admin/officer roles can modify rules.\n    \"\"\"\n    def has_permission(self, request, view):\n        if not request.user or not request.user.is_authenticated:\n            return False\n        allowed_roles = [\"ADMIN\", \"DSP\", \"SI\", \"ASI\", \"CONSTABLE\"]\n        return getattr(request.user, \"role\", None) in allowed_roles\nclass ReadOnlyForAuthenticated(BasePermission):",
+        "detail": "challan_system_back_end.challan.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnlyForAuthenticated",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.permissions",
+        "description": "challan_system_back_end.challan.permissions",
+        "peekOfCode": "class ReadOnlyForAuthenticated(BasePermission):\n    \"\"\"\n    All authenticated users can read.\n    No anonymous access.\n    \"\"\"\n    def has_permission(self, request, view):\n        if not request.user or not request.user.is_authenticated:\n            return False\n        if request.method in (\"GET\",):\n            return True",
+        "detail": "challan_system_back_end.challan.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "RuleSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.serializers",
+        "description": "challan_system_back_end.challan.serializers",
+        "peekOfCode": "class RuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Rule\n        fields = [\n            \"id\",\n            \"rule_name\",\n            \"description\",\n            \"exemption\",\n            \"fine_amount\",\n            \"start_date\",",
+        "detail": "challan_system_back_end.challan.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan.urls",
+        "description": "challan_system_back_end.challan.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"rules/add/\", views.add_rule, name=\"add-rule\"),\n    path(\"rules/update/<int:rule_id>/\", views.update_rule, name=\"update-rule\"),\n    path(\"rules/delete/<int:rule_id>/\", views.delete_rule, name=\"delete-rule\"),\n    path(\"rules/view/<int:rule_id>/\", views.view_rule, name=\"view-rule\"),\n    path(\"rules/all/\", views.list_rules, name=\"list-rules\"),\n]",
+        "detail": "challan_system_back_end.challan.urls",
+        "documentation": {}
+    },
+    {
+        "label": "add_rule",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def add_rule(request):\n    serializer = RuleSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response(\n            {\"message\": \"Rule created successfully\", \"data\": serializer.data},\n            status=status.HTTP_201_CREATED\n        )\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# UPDATE RULE",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_rule",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def update_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    serializer = RuleSerializer(rule, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Rule updated successfully\", \"data\": serializer.data})\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_rule",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def delete_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    rule.delete()\n    return Response({\"message\": \"Rule deleted successfully\"}, status=status.HTTP_200_OK)\n# VIEW SINGLE RULE\n@api_view([\"GET\"])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_rule",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def view_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    serializer = RuleSerializer(rule)\n    return Response(serializer.data, status=status.HTTP_200_OK)\n# VIEW ALL RULES\n@api_view([\"GET\"])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "list_rules",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def list_rules(request):\n    rules = Rule.objects.all().order_by(\"-created_at\")\n    serializer = RuleSerializer(rules, many=True)\n    return Response(serializer.data)",
+        "detail": "challan_system_back_end.challan.views",
         "documentation": {}
     },
     {
@@ -571,6 +828,24 @@
         "documentation": {}
     },
     {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ]\n}\nfrom datetime import timedelta\nSIMPLE_JWT = {",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=7),\n}\n# Internationalization\n# https://docs.djangoproject.com/en/5.2/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
         "label": "LANGUAGE_CODE",
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
@@ -629,7 +904,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.urls",
         "description": "challan_system_back_end.challan_system_back_end.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/users/', include('users.urls')),\n    path('api/officer/', include('officer.urls')),\n    path('api/challan/', include('challan.urls')),\n]",
         "detail": "challan_system_back_end.challan_system_back_end.urls",
         "documentation": {}
     },
@@ -697,12 +972,30 @@
         "documentation": {}
     },
     {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "challan_system_back_end.officer.urls",
+        "description": "challan_system_back_end.officer.urls",
+        "peekOfCode": "urlpatterns = [\n]",
+        "detail": "challan_system_back_end.officer.urls",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "challan_system_back_end.users.migrations.0001_initial",
         "description": "challan_system_back_end.users.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Bike',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('bike_number', models.CharField(max_length=20, unique=True)),",
         "detail": "challan_system_back_end.users.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.migrations.0002_remove_bike_stolen_status",
+        "description": "challan_system_back_end.users.migrations.0002_remove_bike_stolen_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('users', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='bike',\n            name='stolen_status',\n        ),\n    ]",
+        "detail": "challan_system_back_end.users.migrations.0002_remove_bike_stolen_status",
         "documentation": {}
     },
     {
@@ -719,7 +1012,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.admin",
         "description": "challan_system_back_end.users.admin",
-        "peekOfCode": "class WebsiteUserAdmin(admin.ModelAdmin):\n    list_display = (\"email\", \"phone\", \"is_active\", \"created_at\")\n    search_fields = (\"email\", \"phone\")\n    list_filter = (\"is_active\",)\n# Bike\n@admin.register(Bike)\nclass BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\", \"stolen_status\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n    list_filter = (\"stolen_status\",)",
+        "peekOfCode": "class WebsiteUserAdmin(admin.ModelAdmin):\n    list_display = (\"email\", \"phone\", \"is_active\", \"created_at\")\n    search_fields = (\"email\", \"phone\")\n    list_filter = (\"is_active\",)\n# Bike\n@admin.register(Bike)\nclass BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n# BikeDocument",
         "detail": "challan_system_back_end.users.admin",
         "documentation": {}
     },
@@ -728,7 +1021,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.admin",
         "description": "challan_system_back_end.users.admin",
-        "peekOfCode": "class BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\", \"stolen_status\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n    list_filter = (\"stolen_status\",)\n# BikeDocument\n@admin.register(BikeDocument)\nclass BikeDocumentAdmin(admin.ModelAdmin):\n    list_display = (\"bike\", \"document_type\", \"uploaded_at\")\n    search_fields = (\"bike__bike_number\", \"document_type\")\n    list_filter = (\"document_type\",)",
+        "peekOfCode": "class BikeAdmin(admin.ModelAdmin):\n    list_display = (\"bike_number\", \"owner\", \"registration_date\")\n    search_fields = (\"bike_number\", \"owner__full_name\")\n# BikeDocument\n@admin.register(BikeDocument)\nclass BikeDocumentAdmin(admin.ModelAdmin):\n    list_display = (\"bike\", \"document_type\", \"uploaded_at\")\n    search_fields = (\"bike__bike_number\", \"document_type\")\n    list_filter = (\"document_type\",)\n# UserBike",
         "detail": "challan_system_back_end.users.admin",
         "documentation": {}
     },
@@ -773,7 +1066,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.models",
         "description": "challan_system_back_end.users.models",
-        "peekOfCode": "class WebsiteUser(models.Model):\n    user_id = models.AutoField(primary_key=True)\n    citizen = models.OneToOneField(\n        Citizen,\n        on_delete=models.CASCADE,\n        related_name=\"website_user\"\n    )\n    email = models.EmailField(unique=True)\n    phone = models.CharField(max_length=20)\n    address = models.TextField()",
+        "peekOfCode": "class WebsiteUser(models.Model):\n    user_id = models.AutoField(primary_key=True)\n    citizen = models.OneToOneField(\n        Citizen,\n        on_delete=models.CASCADE,\n        related_name=\"website_user\"\n    )\n    email = models.EmailField(unique=True)\n    phone = models.CharField(max_length=20)\n    address = models.TextField(null=True, blank=True)",
         "detail": "challan_system_back_end.users.models",
         "documentation": {}
     },
@@ -782,7 +1075,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.models",
         "description": "challan_system_back_end.users.models",
-        "peekOfCode": "class Bike(models.Model):\n    bike_number = models.CharField(max_length=20, unique=True)\n    owner = models.ForeignKey(Citizen, on_delete=models.CASCADE, related_name=\"bikes\")\n    registration_date = models.DateField()\n    STOLEN_CHOICES = [\n        (\"Stolen\", \"Stolen\"),\n        (\"NotStolen\", \"NotStolen\"),\n    ]\n    stolen_status = models.CharField(max_length=20, choices=STOLEN_CHOICES, default=\"NotStolen\")\n    created_at = models.DateTimeField(default=timezone.now)",
+        "peekOfCode": "class Bike(models.Model):\n    bike_number = models.CharField(max_length=20, unique=True)\n    owner = models.ForeignKey(Citizen, on_delete=models.CASCADE, related_name=\"bikes\")\n    registration_date = models.DateField()\n    created_at = models.DateTimeField(default=timezone.now)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.bike_number\n# -------------------------------------------------------\n# Bike Documents",
         "detail": "challan_system_back_end.users.models",
         "documentation": {}
     },
@@ -800,8 +1093,116 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.models",
         "description": "challan_system_back_end.users.models",
-        "peekOfCode": "class UserBike(models.Model):\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    bike = models.ForeignKey(Bike, on_delete=models.CASCADE)\n    VERIFICATION_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Verified\", \"Verified\"),\n        (\"Rejected\", \"Rejected\"),\n    ]\n    verification_status = models.CharField(max_length=20, choices=VERIFICATION_CHOICES, default=\"Pending\")\n    official_copy_url = models.CharField(max_length=255, null=True, blank=True)",
+        "peekOfCode": "class UserBike(models.Model):\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    bike = models.ForeignKey(Bike, on_delete=models.CASCADE)\n    VERIFICATION_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Verified\", \"Verified\"),\n        (\"Rejected\", \"Rejected\"),\n    ]\n    verification_status = models.CharField(max_length=20, choices=VERIFICATION_CHOICES, default=\"Verified\")\n    official_copy_url = models.CharField(max_length=255, null=True, blank=True)",
         "detail": "challan_system_back_end.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsAccountOwner",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.permissions",
+        "description": "challan_system_back_end.users.permissions",
+        "peekOfCode": "class IsAccountOwner(BasePermission):\n    \"\"\"\n    Only the logged-in user can view or edit their data.\n    Nobody else can view anything.\n    \"\"\"\n    def has_object_permission(self, request, view, obj):\n        return obj.user_id == request.user.user_id\nclass IsAuthenticatedUser(BasePermission):\n    \"\"\"\n    Only logged-in users can access personal account functionality.",
+        "detail": "challan_system_back_end.users.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticatedUser",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.permissions",
+        "description": "challan_system_back_end.users.permissions",
+        "peekOfCode": "class IsAuthenticatedUser(BasePermission):\n    \"\"\"\n    Only logged-in users can access personal account functionality.\n    \"\"\"\n    def has_permission(self, request, view):\n        return request.user and request.user.is_authenticated",
+        "detail": "challan_system_back_end.users.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "SignupSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.serializers",
+        "description": "challan_system_back_end.users.serializers",
+        "peekOfCode": "class SignupSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    phone = serializers.CharField()\n    password = serializers.CharField(write_only=True)\n    confirm_password = serializers.CharField(write_only=True)\n    bike_number = serializers.CharField()\n    official_copy_url = serializers.CharField()       # File upload later\n    cnic_front_url = serializers.CharField()\n    cnic_back_url = serializers.CharField()\n    def validate(self, data):",
+        "detail": "challan_system_back_end.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "LoginSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.serializers",
+        "description": "challan_system_back_end.users.serializers",
+        "peekOfCode": "class LoginSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    password = serializers.CharField(write_only=True)\nclass EditUserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = WebsiteUser\n        fields = [\"phone\", \"address\", \"profile_pic_url\"]",
+        "detail": "challan_system_back_end.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "EditUserSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.serializers",
+        "description": "challan_system_back_end.users.serializers",
+        "peekOfCode": "class EditUserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = WebsiteUser\n        fields = [\"phone\", \"address\", \"profile_pic_url\"]",
+        "detail": "challan_system_back_end.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "challan_system_back_end.users.urls",
+        "description": "challan_system_back_end.users.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"signup/\", views.signup),\n    path(\"login/\", views.login),\n    path(\"me/\", views.get_user_info),\n    path(\"edit/\", views.edit_user),\n    path(\"delete/\", views.delete_user),\n]",
+        "detail": "challan_system_back_end.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "generate_tokens",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def generate_tokens(user):\n    refresh = RefreshToken.for_user(user)\n    return {\n        \"access\": str(refresh.access_token),\n        \"refresh\": str(refresh)\n    }\n# 1. SIGNUP\n@api_view([\"POST\"])\ndef signup(request):\n    serializer = SignupSerializer(data=request.data)",
+        "detail": "challan_system_back_end.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def signup(request):\n    serializer = SignupSerializer(data=request.data)\n    if not serializer.is_valid():\n        return Response(serializer.errors, status=400)\n    email = serializer.validated_data[\"email\"]\n    phone = serializer.validated_data[\"phone\"]\n    password = serializer.validated_data[\"password\"]\n    bike_number = serializer.validated_data[\"bike_number\"]\n    official_copy_url = serializer.validated_data[\"official_copy_url\"]\n    cnic_front_url = serializer.validated_data[\"cnic_front_url\"]",
+        "detail": "challan_system_back_end.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def login(request):\n    serializer = LoginSerializer(data=request.data)\n    if not serializer.is_valid():\n        return Response(serializer.errors, status=400)\n    email = serializer.validated_data[\"email\"]\n    password = serializer.validated_data[\"password\"]\n    try:\n        user = WebsiteUser.objects.get(email=email)\n    except WebsiteUser.DoesNotExist:\n        return Response({\"error\": \"Invalid credentials\"}, status=400)",
+        "detail": "challan_system_back_end.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def get_user_info(request):\n    user = request.user\n    return Response({\n        \"email\": user.email,\n        \"phone\": user.phone\n    })\n# 4. EDIT USER DETAILS\n@api_view([\"PATCH\"])\n@permission_classes([IsAuthenticatedUser])\ndef edit_user(request):",
+        "detail": "challan_system_back_end.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_user",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def edit_user(request):\n    user = request.user\n    serializer = EditUserSerializer(user, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Profile updated\"})\n    return Response(serializer.errors, status=400)\n# 5. DELETE USER ACCOUNT\n@api_view([\"DELETE\"])\n@permission_classes([IsAuthenticatedUser])",
+        "detail": "challan_system_back_end.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_user",
+        "kind": 2,
+        "importPath": "challan_system_back_end.users.views",
+        "description": "challan_system_back_end.users.views",
+        "peekOfCode": "def delete_user(request):\n    user = request.user\n    user.delete()\n    return Response({\"message\": \"Account deleted\"}, status=200)",
+        "detail": "challan_system_back_end.users.views",
         "documentation": {}
     },
     {

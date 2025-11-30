@@ -37,15 +37,27 @@ class WebsiteUser(models.Model):
 
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20)
-    address = models.TextField()
+    address = models.TextField(null=True, blank=True)
 
     profile_pic_url = models.CharField(max_length=255, null=True, blank=True)
+
+    # IMPORTANT: password hashing required
     password = models.CharField(max_length=255)
 
     is_active = models.BooleanField(default=True)
 
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def save(self, *args, **kwargs):
+        """
+        Automatically hash password if it is plain text.
+        Prevent double hashing by checking the prefix.
+        """
+        if self.password and not self.password.startswith("pbkdf2_sha256$"):
+            self.password = make_password(self.password)
+
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.email
@@ -58,12 +70,6 @@ class Bike(models.Model):
     owner = models.ForeignKey(Citizen, on_delete=models.CASCADE, related_name="bikes")
     registration_date = models.DateField()
     
-    STOLEN_CHOICES = [
-        ("Stolen", "Stolen"),
-        ("NotStolen", "NotStolen"),
-    ]
-    stolen_status = models.CharField(max_length=20, choices=STOLEN_CHOICES, default="NotStolen")
-
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
@@ -102,7 +108,7 @@ class UserBike(models.Model):
         ("Verified", "Verified"),
         ("Rejected", "Rejected"),
     ]
-    verification_status = models.CharField(max_length=20, choices=VERIFICATION_CHOICES, default="Pending")
+    verification_status = models.CharField(max_length=20, choices=VERIFICATION_CHOICES, default="Verified")
 
     official_copy_url = models.CharField(max_length=255, null=True, blank=True)
     is_primary = models.BooleanField(default=False)
