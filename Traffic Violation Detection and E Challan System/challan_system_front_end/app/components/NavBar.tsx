@@ -106,10 +106,8 @@ export default function NavBar() {
   // Update active page based on route
   useEffect(() => {
     if (pathname === "/") setActivePage("Home");
-    else if (pathname.startsWith("/contact")) setActivePage("Contact");
     else if (pathname.startsWith("/about")) setActivePage("About");
     else if (pathname.startsWith("/my-challans")) setActivePage("My Challans");
-    else if (pathname.startsWith("/history")) setActivePage("History");
     else if (pathname.startsWith("/rules")) setActivePage("Rule");
     else setActivePage("404 Page");
   }, [pathname]);
@@ -143,16 +141,8 @@ export default function NavBar() {
               className="absolute top-full -left-2 sm:-left-5 mt-1 w-36 bg-white border border-gray-300 rounded shadow-lg z-50"
             >
               <Link href="/" onClick={() => handlePageChange("Home")} className="block px-3 py-2 hover:bg-gray-100 text-black">Home</Link>
-              <Link href="/contact" onClick={() => handlePageChange("Contact")} className="block px-3 py-2 hover:bg-gray-100 text-black">Contact</Link>
-
               {isLoggedIn && (
                 <Link href="/my-challans" onClick={() => handlePageChange("My Challans")} className="block px-3 py-2 hover:bg-gray-100 text-black">My Challans</Link>
-              )}
-
-              <Link href="/about" onClick={() => handlePageChange("About")} className="block px-3 py-2 hover:bg-gray-100 text-black">About</Link>
-
-              {isLoggedIn && (
-                <Link href="/history" onClick={() => handlePageChange("History")} className="block px-3 py-2 hover:bg-gray-100 text-black">History</Link>
               )}
 
               <Link href="/rules" onClick={() => handlePageChange("Rule")} className="block px-3 py-2 hover:bg-gray-100 text-black">Rule</Link>

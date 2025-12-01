@@ -17,12 +17,18 @@ class RuleSerializer(serializers.ModelSerializer):
         ]
 
 class ChallanSerializer(serializers.ModelSerializer):
+    # Add this to get the actual text (e.g., "ABC-123") instead of ID
+    bike_number = serializers.ReadOnlyField(source='bike.bike_number')
+    rule_name = serializers.ReadOnlyField(source='rule.rule_name')
+
     class Meta:
         model = Challan
         fields = [
             "id",
             "bike",
+            "bike_number", # Added
             "rule",
+            "rule_name",   # Added
             "officer",
             "area",
             "challan_date",
@@ -35,11 +41,11 @@ class ChallanSerializer(serializers.ModelSerializer):
             "is_active",
         ]
 
-
 class CreateChallanSerializer(serializers.ModelSerializer):
     class Meta:
         model = Challan
         fields = [
+            "id",
             "bike",
             "rule",
             "officer",
@@ -48,7 +54,7 @@ class CreateChallanSerializer(serializers.ModelSerializer):
             "amount_charged",
             "evidence_url",
         ]
-
+        read_only_fields = ["officer", "area", "amount_charged", "due_date"]
 
 class ChallengeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -64,8 +70,7 @@ class ChallengeSerializer(serializers.ModelSerializer):
             "reviewed_by",
             "reviewed_at",
         ]
-
-
+        
 class CreateChallengeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Challenge
@@ -75,3 +80,8 @@ class CreateChallengeSerializer(serializers.ModelSerializer):
             "reason",
             "evidence_url",
         ]
+        # Make fields optional/flexible
+        extra_kwargs = {
+            'user': {'required': False, 'allow_null': True},
+            'evidence_url': {'required': False, 'allow_null': True}
+        }

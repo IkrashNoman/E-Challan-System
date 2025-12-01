@@ -20,4 +20,11 @@ urlpatterns = [
     path("appeal/create/", views.raise_appeal),
     path("appeal/update/<int:appeal_id>/", views.edit_appeal),
     path("appeal/view/<int:appeal_id>/", views.view_appeal),
+    path("appeal/all/", views.list_appeals),
+
+    #Public
+    path("public/search/", views.search_challans),
+    path("public/pay/<int:challan_id>/", views.pay_challan),
+    path("public/rules/", views.public_list_rules),
+    path("my-challans/", views.my_challans),
 ]

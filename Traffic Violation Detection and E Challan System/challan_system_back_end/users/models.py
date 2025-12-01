@@ -27,6 +27,7 @@ class Citizen(models.Model):
 # -------------------------------------------------------
 # User – website account (extend later when integrating auth)
 # -------------------------------------------------------
+
 class WebsiteUser(models.Model):
     user_id = models.AutoField(primary_key=True)
 
@@ -39,25 +40,25 @@ class WebsiteUser(models.Model):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20)
     address = models.TextField(null=True, blank=True)
-
     profile_pic_url = models.CharField(max_length=255, null=True, blank=True)
-
-    # IMPORTANT: password hashing required
     password = models.CharField(max_length=255)
-
     is_active = models.BooleanField(default=True)
-
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
+    # --- ADD THESE PROPERTIES ---
+    @property
+    def is_authenticated(self):
+        """Required for DRF permissions to work"""
+        return True
+
+    @property
+    def is_anonymous(self):
+        return False
+
     def save(self, *args, **kwargs):
-        """
-        Automatically hash password if it is plain text.
-        Prevent double hashing by checking the prefix.
-        """
         if self.password and not self.password.startswith("pbkdf2_sha256$"):
             self.password = make_password(self.password)
-
         super().save(*args, **kwargs)
 
     def __str__(self):

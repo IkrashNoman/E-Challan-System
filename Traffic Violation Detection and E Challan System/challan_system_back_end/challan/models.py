@@ -49,6 +49,7 @@ class Challan(models.Model):
     
     created_at = models.DateTimeField(default=timezone.now)
     is_active = models.BooleanField(default=True)
+    payment_proof = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return f"Challan #{self.id}"
@@ -59,8 +60,8 @@ class Challan(models.Model):
 # -------------------------------------------------------
 class Challenge(models.Model):
     challan = models.ForeignKey(Challan, on_delete=models.CASCADE, related_name="appeals")
-    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)
 
+    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE, null=True, blank=True)
     reason = models.TextField()
     evidence_url = models.CharField(max_length=255, null=True, blank=True)
 

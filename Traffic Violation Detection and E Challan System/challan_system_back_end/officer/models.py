@@ -59,4 +59,17 @@ class Officer(models.Model):
 
     def __str__(self):
         return f"{self.rank} {self.name}"
+    @property
+    def is_authenticated(self):
+        """
+        Always return True. This is a way to tell Django that the user has been successfully logged in.
+        """
+        return True
+
+    @property
+    def is_anonymous(self):
+        """
+        Always return False. This is a way to tell Django that this is not an anonymous user.
+        """
+        return False
 

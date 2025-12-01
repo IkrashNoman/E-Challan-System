@@ -1,13 +1,15 @@
 """
 Django settings for challan_system_back_end project.
 """
-
+import os
 from pathlib import Path
+from dotenv import load_dotenv  # Import this
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# Load the .env file
+load_dotenv(BASE_DIR / '.env')
 # Quick-start development settings - unsuitable for production
 SECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'
 
@@ -91,7 +93,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'users.authentication.UserJWTAuthentication',
     ),
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
@@ -112,3 +114,13 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+# Read from .env file
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')

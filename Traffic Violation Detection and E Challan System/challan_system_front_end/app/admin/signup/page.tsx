@@ -20,6 +20,7 @@ export default function AdminLogin() {
   const [cooldownEnd, setCooldownEnd] = useState<Date | null>(null);
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
 
   function generateCaptcha() {
     const code = Math.random().toString(36).substring(2, 8).toUpperCase();
@@ -28,22 +29,21 @@ export default function AdminLogin() {
 
   useEffect(() => {
     generateCaptcha();
-    // Check if already logged in?
+    // Check if already logged in and redirect
     const token = localStorage.getItem("officerToken");
     if (token) {
-        // Optional: validate token or redirect
-        // router.push("/admin/add-other"); 
+        router.push("/admin/add-other"); 
+    } else {
+        setIsCheckingAuth(false);
     }
   }, []);
 
   // Cooldown Timer
   useEffect(() => {
     if (!cooldownEnd) return;
-
     const interval = setInterval(() => {
       const now = new Date();
       const remainingTime = cooldownEnd.getTime() - now.getTime();
-
       if (remainingTime <= 0) {
         clearInterval(interval);
         setCooldownEnd(null); 
@@ -52,7 +52,6 @@ export default function AdminLogin() {
         setTimeLeft(Math.ceil(remainingTime / 1000)); 
       }
     }, 1000);
-
     return () => clearInterval(interval);
   }, [cooldownEnd]);
 
@@ -62,11 +61,10 @@ export default function AdminLogin() {
 
   function applyCooldown() {
     if (tries < 3) return;
-
     let secondsToAdd = 0;
-    if (tries === 3) secondsToAdd = 30; // 30s
-    else if (tries === 6) secondsToAdd = 300; // 5m
-    else if (tries >= 9) secondsToAdd = 3600; // 1h
+    if (tries === 3) secondsToAdd = 30; 
+    else if (tries === 6) secondsToAdd = 300; 
+    else if (tries >= 9) secondsToAdd = 3600; 
 
     const next = new Date();
     next.setSeconds(next.getSeconds() + secondsToAdd);
@@ -86,9 +84,11 @@ export default function AdminLogin() {
       return;
     }
 
-    if (captchaInput !== captcha) {
+    // --- FIX: Ensure strict comparison by trimming whitespace ---
+    if (captchaInput.trim() !== captcha) {
       toast.error("Invalid captcha");
       generateCaptcha();
+      setCaptchaInput(""); // Clear input on failure
       return;
     }
 
@@ -100,7 +100,6 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      // Connect to Backend Login Endpoint
       const response = await fetch(`${API_BASE}/api/officer/login/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -111,22 +110,18 @@ export default function AdminLogin() {
 
       if (response.ok) {
         toast.success("Login Successful");
-        
-        // Store Tokens
         localStorage.setItem("officerToken", data.tokens.access);
         localStorage.setItem("officerRefreshToken", data.tokens.refresh);
         localStorage.setItem("officerName", data.name);
         localStorage.setItem("officerRank", data.rank);
-
-        // Redirect
         router.push("/admin/add-other"); 
       } else {
-        // Failed Login
         const newTry = tries + 1;
         setTries(newTry);
         applyCooldown();
         toast.error(data.error || "Invalid credentials");
         generateCaptcha();
+        setCaptchaInput("");
       }
     } catch (error) {
       toast.error("Network error. Backend not reachable.");
@@ -134,6 +129,10 @@ export default function AdminLogin() {
       setLoading(false);
     }
   };
+
+  if (isCheckingAuth) {
+    return <div className="min-h-screen flex items-center justify-center bg-gray-100">Loading...</div>;
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
@@ -167,7 +166,6 @@ export default function AdminLogin() {
                 />
             </div>
 
-            {/* Captcha Section */}
             <div className="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <label className="block mb-1 font-semibold text-gray-700 text-sm">Security Check</label>
                 <div className="flex items-center justify-between mb-2">
@@ -189,7 +187,8 @@ export default function AdminLogin() {
                     className="border w-full p-2 rounded focus:ring-1 focus:ring-blue-500 outline-none text-center uppercase"
                     placeholder="Enter code above"
                     value={captchaInput}
-                    onChange={(e) => setCaptchaInput(e.target.value)}
+                    // --- FIX: Force Uppercase input immediately ---
+                    onChange={(e) => setCaptchaInput(e.target.value.toUpperCase())}
                 />
             </div>
 

@@ -96,14 +96,6 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -160,11 +152,67 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -192,11 +240,11 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -250,6 +298,30 @@
         "documentation": {}
     },
     {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Bike",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "WebsiteUser",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
         "label": "Bike",
         "importPath": "users.models",
         "description": "users.models",
@@ -290,6 +362,14 @@
         "documentation": {}
     },
     {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "BasePermission",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -323,6 +403,14 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -394,6 +482,22 @@
         "documentation": {}
     },
     {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "authentication_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
@@ -439,6 +543,78 @@
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerJWTAuthentication",
+        "importPath": "officer.authentication",
+        "description": "officer.authentication",
+        "isExtraImport": true,
+        "detail": "officer.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerJWTAuthentication",
+        "importPath": "officer.authentication",
+        "description": "officer.authentication",
+        "isExtraImport": true,
+        "detail": "officer.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "default_storage",
+        "importPath": "django.core.files.storage",
+        "description": "django.core.files.storage",
+        "isExtraImport": true,
+        "detail": "django.core.files.storage",
         "documentation": {}
     },
     {
@@ -467,11 +643,11 @@
         "documentation": {}
     },
     {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
         "isExtraImport": true,
-        "detail": "datetime",
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -483,6 +659,54 @@
         "documentation": {}
     },
     {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "InvalidToken",
+        "importPath": "rest_framework_simplejwt.exceptions",
+        "description": "rest_framework_simplejwt.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationFailed",
+        "importPath": "rest_framework_simplejwt.exceptions",
+        "description": "rest_framework_simplejwt.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "api_settings",
+        "importPath": "rest_framework_simplejwt.settings",
+        "description": "rest_framework_simplejwt.settings",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.settings",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
         "label": "check_password",
         "importPath": "django.contrib.auth.hashers",
         "description": "django.contrib.auth.hashers",
@@ -528,6 +752,22 @@
         "description": "django.contrib.auth.hashers",
         "isExtraImport": true,
         "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
         "documentation": {}
     },
     {
@@ -564,14 +804,6 @@
         "documentation": {}
     },
     {
-        "label": "RefreshToken",
-        "importPath": "rest_framework_simplejwt.tokens",
-        "description": "rest_framework_simplejwt.tokens",
-        "isExtraImport": true,
-        "detail": "rest_framework_simplejwt.tokens",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -605,6 +837,15 @@
         "description": "challan_system_back_end.challan.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('officer', '0001_initial'),\n        ('users', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Rule',\n            fields=[",
         "detail": "challan_system_back_end.challan.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.migrations.0002_challan_payment_proof_alter_challenge_user",
+        "description": "challan_system_back_end.challan.migrations.0002_challan_payment_proof_alter_challenge_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('challan', '0001_initial'),\n        ('users', '0003_alter_userbike_verification_status_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='challan',\n            name='payment_proof',\n            field=models.CharField(blank=True, max_length=255, null=True),",
+        "detail": "challan_system_back_end.challan.migrations.0002_challan_payment_proof_alter_challenge_user",
         "documentation": {}
     },
     {
@@ -666,7 +907,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.challan.models",
         "description": "challan_system_back_end.challan.models",
-        "peekOfCode": "class Challenge(models.Model):\n    challan = models.ForeignKey(Challan, on_delete=models.CASCADE, related_name=\"appeals\")\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE)\n    reason = models.TextField()\n    evidence_url = models.CharField(max_length=255, null=True, blank=True)\n    STATUS_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Approved\", \"Approved\"),\n        (\"Rejected\", \"Rejected\"),\n    ]",
+        "peekOfCode": "class Challenge(models.Model):\n    challan = models.ForeignKey(Challan, on_delete=models.CASCADE, related_name=\"appeals\")\n    user = models.ForeignKey(WebsiteUser, on_delete=models.CASCADE, null=True, blank=True)\n    reason = models.TextField()\n    evidence_url = models.CharField(max_length=255, null=True, blank=True)\n    STATUS_CHOICES = [\n        (\"Pending\", \"Pending\"),\n        (\"Approved\", \"Approved\"),\n        (\"Rejected\", \"Rejected\"),\n    ]",
         "detail": "challan_system_back_end.challan.models",
         "documentation": {}
     },
@@ -675,7 +916,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.challan.permissions",
         "description": "challan_system_back_end.challan.permissions",
-        "peekOfCode": "class IsAdminOrOfficer(BasePermission):\n    \"\"\"\n    Only logged-in users with admin/officer roles can modify rules.\n    \"\"\"\n    def has_permission(self, request, view):\n        if not request.user or not request.user.is_authenticated:\n            return False\n        allowed_roles = [\"ADMIN\", \"DSP\", \"SI\", \"ASI\", \"CONSTABLE\"]\n        return getattr(request.user, \"role\", None) in allowed_roles\nclass ReadOnlyForAuthenticated(BasePermission):",
+        "peekOfCode": "class IsAdminOrOfficer(BasePermission):\n    \"\"\"\n    Only logged-in users with valid officer ranks can modify rules.\n    \"\"\"\n    def has_permission(self, request, view):\n        # 1. Check if user is authenticated\n        if not request.user or not request.user.is_authenticated:\n            return False\n        # 2. Define allowed ranks\n        # Ensure 'Inspector' is here since you are logging in as one.",
         "detail": "challan_system_back_end.challan.permissions",
         "documentation": {}
     },
@@ -684,7 +925,25 @@
         "kind": 6,
         "importPath": "challan_system_back_end.challan.permissions",
         "description": "challan_system_back_end.challan.permissions",
-        "peekOfCode": "class ReadOnlyForAuthenticated(BasePermission):\n    \"\"\"\n    All authenticated users can read.\n    No anonymous access.\n    \"\"\"\n    def has_permission(self, request, view):\n        if not request.user or not request.user.is_authenticated:\n            return False\n        if request.method in (\"GET\",):\n            return True",
+        "peekOfCode": "class ReadOnlyForAuthenticated(BasePermission):\n    \"\"\"\n    All authenticated users can read (GET requests).\n    No anonymous access.\n    \"\"\"\n    def has_permission(self, request, view):\n        if not request.user or not request.user.is_authenticated:\n            return False\n        if request.method in (\"GET\", \"HEAD\", \"OPTIONS\"):\n            return True",
+        "detail": "challan_system_back_end.challan.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsOfficer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.permissions",
+        "description": "challan_system_back_end.challan.permissions",
+        "peekOfCode": "class IsOfficer(BasePermission):\n    \"\"\"Only an authenticated Officer can create a challan.\"\"\"\n    def has_permission(self, request, view):\n        user = request.user\n        # FIX: Ensure we check for 'rank' here as well, consistent with the Officer model\n        return bool(user and user.is_authenticated and hasattr(user, \"rank\"))\nclass IsChallanOwner(BasePermission):\n    \"\"\"Only the bike owner (WebsiteUser) can raise or edit appeals.\"\"\"\n    def has_permission(self, request, view):\n        # Ensure the user is authenticated",
+        "detail": "challan_system_back_end.challan.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsChallanOwner",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.permissions",
+        "description": "challan_system_back_end.challan.permissions",
+        "peekOfCode": "class IsChallanOwner(BasePermission):\n    \"\"\"Only the bike owner (WebsiteUser) can raise or edit appeals.\"\"\"\n    def has_permission(self, request, view):\n        # Ensure the user is authenticated\n        return bool(request.user and request.user.is_authenticated)",
         "detail": "challan_system_back_end.challan.permissions",
         "documentation": {}
     },
@@ -698,11 +957,47 @@
         "documentation": {}
     },
     {
+        "label": "ChallanSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.serializers",
+        "description": "challan_system_back_end.challan.serializers",
+        "peekOfCode": "class ChallanSerializer(serializers.ModelSerializer):\n    # Add this to get the actual text (e.g., \"ABC-123\") instead of ID\n    bike_number = serializers.ReadOnlyField(source='bike.bike_number')\n    rule_name = serializers.ReadOnlyField(source='rule.rule_name')\n    class Meta:\n        model = Challan\n        fields = [\n            \"id\",\n            \"bike\",\n            \"bike_number\", # Added",
+        "detail": "challan_system_back_end.challan.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CreateChallanSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.serializers",
+        "description": "challan_system_back_end.challan.serializers",
+        "peekOfCode": "class CreateChallanSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Challan\n        fields = [\n            \"id\",\n            \"bike\",\n            \"rule\",\n            \"officer\",\n            \"area\",\n            \"due_date\",",
+        "detail": "challan_system_back_end.challan.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChallengeSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.serializers",
+        "description": "challan_system_back_end.challan.serializers",
+        "peekOfCode": "class ChallengeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Challenge\n        fields = [\n            \"id\",\n            \"challan\",\n            \"user\",\n            \"reason\",\n            \"evidence_url\",\n            \"status\",",
+        "detail": "challan_system_back_end.challan.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CreateChallengeSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.challan.serializers",
+        "description": "challan_system_back_end.challan.serializers",
+        "peekOfCode": "class CreateChallengeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Challenge\n        fields = [\n            \"challan\",\n            \"user\",\n            \"reason\",\n            \"evidence_url\",\n        ]\n        # Make fields optional/flexible",
+        "detail": "challan_system_back_end.challan.serializers",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "challan_system_back_end.challan.urls",
         "description": "challan_system_back_end.challan.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"rules/add/\", views.add_rule, name=\"add-rule\"),\n    path(\"rules/update/<int:rule_id>/\", views.update_rule, name=\"update-rule\"),\n    path(\"rules/delete/<int:rule_id>/\", views.delete_rule, name=\"delete-rule\"),\n    path(\"rules/view/<int:rule_id>/\", views.view_rule, name=\"view-rule\"),\n    path(\"rules/all/\", views.list_rules, name=\"list-rules\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    # RULES\n    path(\"rules/add/\", views.add_rule),\n    path(\"rules/update/<int:rule_id>/\", views.update_rule),\n    path(\"rules/delete/<int:rule_id>/\", views.delete_rule),\n    path(\"rules/view/<int:rule_id>/\", views.view_rule),\n    path(\"rules/all/\", views.list_rules),\n    # CHALLAN\n    path(\"create/\", views.create_challan),\n    path(\"update/<int:challan_id>/\", views.update_challan),",
         "detail": "challan_system_back_end.challan.urls",
         "documentation": {}
     },
@@ -729,7 +1024,7 @@
         "kind": 2,
         "importPath": "challan_system_back_end.challan.views",
         "description": "challan_system_back_end.challan.views",
-        "peekOfCode": "def delete_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    rule.delete()\n    return Response({\"message\": \"Rule deleted successfully\"}, status=status.HTTP_200_OK)\n# VIEW SINGLE RULE\n@api_view([\"GET\"])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "peekOfCode": "def delete_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    rule.delete()\n    return Response({\"message\": \"Rule deleted successfully\"}, status=status.HTTP_200_OK)\n# VIEW SINGLE RULE\n@api_view([\"GET\"])\n@authentication_classes([OfficerJWTAuthentication]) # <--- ADD THIS",
         "detail": "challan_system_back_end.challan.views",
         "documentation": {}
     },
@@ -738,7 +1033,7 @@
         "kind": 2,
         "importPath": "challan_system_back_end.challan.views",
         "description": "challan_system_back_end.challan.views",
-        "peekOfCode": "def view_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    serializer = RuleSerializer(rule)\n    return Response(serializer.data, status=status.HTTP_200_OK)\n# VIEW ALL RULES\n@api_view([\"GET\"])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "peekOfCode": "def view_rule(request, rule_id):\n    try:\n        rule = Rule.objects.get(id=rule_id)\n    except Rule.DoesNotExist:\n        return Response({\"error\": \"Rule not found\"}, status=status.HTTP_404_NOT_FOUND)\n    serializer = RuleSerializer(rule)\n    return Response(serializer.data, status=status.HTTP_200_OK)\n# VIEW ALL RULES\n@api_view([\"GET\"])\n@authentication_classes([OfficerJWTAuthentication]) # <--- ADD THIS",
         "detail": "challan_system_back_end.challan.views",
         "documentation": {}
     },
@@ -747,7 +1042,106 @@
         "kind": 2,
         "importPath": "challan_system_back_end.challan.views",
         "description": "challan_system_back_end.challan.views",
-        "peekOfCode": "def list_rules(request):\n    rules = Rule.objects.all().order_by(\"-created_at\")\n    serializer = RuleSerializer(rules, many=True)\n    return Response(serializer.data)",
+        "peekOfCode": "def list_rules(request):\n    rules = Rule.objects.all().order_by(\"-created_at\")\n    serializer = RuleSerializer(rules, many=True)\n    return Response(serializer.data)\n@api_view([\"POST\"])\n@authentication_classes([OfficerJWTAuthentication])\n@permission_classes([IsOfficer])\ndef create_challan(request):\n    # 1. Get Data from Request\n    # We expect 'bike_number' as a STRING from the frontend",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "create_challan",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def create_challan(request):\n    # 1. Get Data from Request\n    # We expect 'bike_number' as a STRING from the frontend\n    bike_number_input = request.data.get(\"bike_number\") \n    rule_id = request.data.get(\"rule_id\")\n    # 2. Validate Inputs\n    if not bike_number_input or not rule_id:\n        return Response({\"error\": \"Bike number and Rule ID are required\"}, status=400)\n    try:\n        # 3. Fetch Related Objects",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_challan",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def update_challan(request, challan_id):\n    try:\n        challan = Challan.objects.get(id=challan_id)\n    except Challan.DoesNotExist:\n        return Response({\"error\": \"Challan not found\"}, status=404)\n    serializer = ChallanSerializer(challan, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Challan updated successfully\", \"data\": serializer.data})\n    return Response(serializer.errors, status=400)",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_challan",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def delete_challan(request, challan_id):\n    try:\n        challan = Challan.objects.get(id=challan_id)\n    except Challan.DoesNotExist:\n        return Response({\"error\": \"Challan not found\"}, status=404)\n    challan.delete()\n    return Response({\"message\": \"Challan deleted successfully\"})\n@api_view([\"GET\"])\n@authentication_classes([OfficerJWTAuthentication])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_challan",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def view_challan(request, challan_id):\n    try:\n        challan = Challan.objects.get(id=challan_id)\n    except Challan.DoesNotExist:\n        return Response({\"error\": \"Challan not found\"}, status=404)\n    serializer = ChallanSerializer(challan)\n    return Response(serializer.data)\n@api_view([\"GET\"])\n@authentication_classes([OfficerJWTAuthentication])\n@permission_classes([ReadOnlyForAuthenticated])",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "list_challans",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def list_challans(request):\n    challans = Challan.objects.all().order_by(\"-created_at\")\n    serializer = ChallanSerializer(challans, many=True)\n    return Response(serializer.data)\n@api_view([\"GET\"])\n@permission_classes([AllowAny])\ndef search_challans(request):\n    query = request.query_params.get(\"bike_number\", \"\").strip()\n    if not query:\n        return Response({\"error\": \"Bike number required\"}, status=400)",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "search_challans",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def search_challans(request):\n    query = request.query_params.get(\"bike_number\", \"\").strip()\n    if not query:\n        return Response({\"error\": \"Bike number required\"}, status=400)\n    # 1. Check if the Bike exists in the system AT ALL\n    # Using filter().exists() is faster than get() for checking existence\n    if not Bike.objects.filter(bike_number__iexact=query).exists():\n        # Return 404 so frontend knows to redirect\n        return Response({\"error\": \"Bike not registered\"}, status=404)\n    # 2. If Bike exists, fetch its challans",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "pay_challan",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def pay_challan(request, challan_id):\n    try:\n        challan = Challan.objects.get(id=challan_id)\n    except Challan.DoesNotExist:\n        return Response({\"error\": \"Challan not found\"}, status=404)\n    if challan.status == \"Paid\":\n        return Response({\"message\": \"Challan is already paid\"}, status=400)\n    # Expecting an image file or URL in 'payment_proof'\n    proof = request.data.get(\"payment_proof\") \n    # In a real app, handle file upload here. ",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "raise_appeal",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def raise_appeal(request):\n    # 1. Handle Data\n    data = request.data.copy() # Make mutable copy\n    # 2. Handle File Upload manually (Since model has CharField, not FileField)\n    evidence_file = request.FILES.get('evidence_url')\n    if evidence_file:\n        # Save file to media folder and get the path/url\n        file_name = default_storage.save(f\"appeals/{evidence_file.name}\", evidence_file)\n        file_url = default_storage.url(file_name)\n        data['evidence_url'] = file_url # Save the string URL to data",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_appeal",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def edit_appeal(request, appeal_id):\n    try:\n        appeal = Challenge.objects.get(id=appeal_id)\n    except Challenge.DoesNotExist:\n        return Response({\"error\": \"Appeal not found\"}, status=404)\n    # Only pending appeals can be edited\n    if appeal.status != \"Pending\":\n        return Response({\"error\": \"Only pending appeals can be edited\"}, status=400)\n    serializer = CreateChallengeSerializer(appeal, data=request.data, partial=True)\n    if serializer.is_valid():",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_appeal",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def view_appeal(request, appeal_id):\n    try:\n        appeal = Challenge.objects.get(id=appeal_id)\n    except Challenge.DoesNotExist:\n        return Response({\"error\": \"Appeal not found\"}, status=404)\n    serializer = ChallengeSerializer(appeal)\n    return Response(serializer.data)\n@api_view([\"GET\"])\n@authentication_classes([OfficerJWTAuthentication])\n@permission_classes([IsOfficer]) # Or IsAdminOrOfficer",
+        "detail": "challan_system_back_end.challan.views",
+        "documentation": {}
+    },
+    {
+        "label": "list_appeals",
+        "kind": 2,
+        "importPath": "challan_system_back_end.challan.views",
+        "description": "challan_system_back_end.challan.views",
+        "peekOfCode": "def list_appeals(request):\n    # Get all challenges, order by pending first\n    appeals = Challenge.objects.all().order_by(\"status\", \"-submitted_at\")\n    serializer = ChallengeSerializer(appeals, many=True)\n    return Response(serializer.data)",
         "detail": "challan_system_back_end.challan.views",
         "documentation": {}
     },
@@ -765,7 +1159,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Load the .env file\nload_dotenv(BASE_DIR / '.env')\n# Quick-start development settings - unsuitable for production\nSECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'corsheaders',  # Correctly installed",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -774,7 +1168,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-v5p1o7$wi(32j8=ms@^j%2inol^k=*fb=dujekkobwfe3sf%l)'\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'corsheaders',  # Correctly installed\n    'rest_framework',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -783,7 +1177,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'corsheaders',  # Correctly installed\n    'rest_framework',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -792,7 +1186,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'central_management.apps.CenteralManagementConfig',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'corsheaders',  # Correctly installed\n    'rest_framework',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -801,7 +1195,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'central_management.apps.CenteralManagementConfig',\n    'users.apps.UsersConfig',\n    'officer.apps.OfficerConfig',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'corsheaders',  # Correctly installed\n    'rest_framework',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'central_management.apps.CenteralManagementConfig',",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -810,7 +1204,16 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'challan_system_back_end.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    # --- FIX: CORS MIDDLEWARE MUST BE HERE ---\n    'corsheaders.middleware.CorsMiddleware', \n    # -----------------------------------------\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\n# ----------------------------------------------\nROOT_URLCONF = 'challan_system_back_end.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -837,7 +1240,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'challan_system_back_end.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'challan_system_back_end.wsgi.application'\n# Database\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\nAUTH_PASSWORD_VALIDATORS = [",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -846,7 +1249,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\nAUTH_PASSWORD_VALIDATORS = [\n    { 'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', },\n    { 'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', },",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -855,7 +1258,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    { 'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', },\n    { 'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', },\n    { 'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', },\n    { 'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', },\n]\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -873,7 +1276,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=7),\n}\n# Internationalization\n# https://docs.djangoproject.com/en/5.2/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=7),\n}\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -882,7 +1285,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -891,7 +1294,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -900,7 +1303,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -909,7 +1312,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -918,7 +1321,7 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -927,7 +1330,61 @@
         "kind": 5,
         "importPath": "challan_system_back_end.challan_system_back_end.settings",
         "description": "challan_system_back_end.challan_system_back_end.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\n# Read from .env file\nEMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "detail": "challan_system_back_end.challan_system_back_end.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "challan_system_back_end.challan_system_back_end.settings",
+        "description": "challan_system_back_end.challan_system_back_end.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
         "detail": "challan_system_back_end.challan_system_back_end.settings",
         "documentation": {}
     },
@@ -959,6 +1416,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.migrations.0002_officer_plain_password",
+        "description": "challan_system_back_end.officer.migrations.0002_officer_plain_password",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('officer', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='officer',\n            name='plain_password',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "challan_system_back_end.officer.migrations.0002_officer_plain_password",
+        "documentation": {}
+    },
+    {
         "label": "AreaAdmin",
         "kind": 6,
         "importPath": "challan_system_back_end.officer.admin",
@@ -983,6 +1449,15 @@
         "description": "challan_system_back_end.officer.apps",
         "peekOfCode": "class OfficerConfig(AppConfig):\n    name = 'officer'",
         "detail": "challan_system_back_end.officer.apps",
+        "documentation": {}
+    },
+    {
+        "label": "OfficerJWTAuthentication",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.authentication",
+        "description": "challan_system_back_end.officer.authentication",
+        "peekOfCode": "class OfficerJWTAuthentication(JWTAuthentication):\n    \"\"\"\n    Custom Authentication to force SimpleJWT to look up users in the Officer model\n    instead of the default Auth User model.\n    \"\"\"\n    def get_user(self, validated_token):\n        try:\n            user_id = validated_token[api_settings.USER_ID_CLAIM]\n        except KeyError:\n            raise InvalidToken(_(\"Token contained no recognizable user identification\"))",
+        "detail": "challan_system_back_end.officer.authentication",
         "documentation": {}
     },
     {
@@ -1022,11 +1497,20 @@
         "documentation": {}
     },
     {
+        "label": "AreaSerializer",
+        "kind": 6,
+        "importPath": "challan_system_back_end.officer.serializers",
+        "description": "challan_system_back_end.officer.serializers",
+        "peekOfCode": "class AreaSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Area\n        fields = [\"id\", \"city\", \"zone\", \"sub_area\"]\nclass OfficerSerializer(serializers.ModelSerializer):\n    \"\"\"For viewing officer details.\"\"\"\n    # We can nest AreaSerializer to show full details in GET requests\n    area_details = AreaSerializer(source='area', read_only=True)\n    class Meta:\n        model = Officer",
+        "detail": "challan_system_back_end.officer.serializers",
+        "documentation": {}
+    },
+    {
         "label": "OfficerSerializer",
         "kind": 6,
         "importPath": "challan_system_back_end.officer.serializers",
         "description": "challan_system_back_end.officer.serializers",
-        "peekOfCode": "class OfficerSerializer(serializers.ModelSerializer):\n    \"\"\"For viewing officer details.\"\"\"\n    class Meta:\n        model = Officer\n        fields = [\n            \"id\",\n            \"rank\",\n            \"name\",\n            \"profile_pic_url\",\n            \"email\",",
+        "peekOfCode": "class OfficerSerializer(serializers.ModelSerializer):\n    \"\"\"For viewing officer details.\"\"\"\n    # We can nest AreaSerializer to show full details in GET requests\n    area_details = AreaSerializer(source='area', read_only=True)\n    class Meta:\n        model = Officer\n        fields = [\n            \"id\",\n            \"rank\",\n            \"name\",",
         "detail": "challan_system_back_end.officer.serializers",
         "documentation": {}
     },
@@ -1035,7 +1519,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.officer.serializers",
         "description": "challan_system_back_end.officer.serializers",
-        "peekOfCode": "class CreateOfficerSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for creating/updating officers.\"\"\"\n    class Meta:\n        model = Officer\n        fields = [\n            \"rank\",\n            \"name\",\n            \"email\",\n            \"password\",         # plain password (later gets hashed)\n            \"area\",",
+        "peekOfCode": "class CreateOfficerSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for creating/updating officers.\"\"\"\n    class Meta:\n        model = Officer\n        fields = [\n            \"rank\",\n            \"name\",\n            \"email\",\n            \"password\",\n            \"area\", # Expects Area ID",
         "detail": "challan_system_back_end.officer.serializers",
         "documentation": {}
     },
@@ -1053,8 +1537,80 @@
         "kind": 5,
         "importPath": "challan_system_back_end.officer.urls",
         "description": "challan_system_back_end.officer.urls",
-        "peekOfCode": "urlpatterns = [\n]",
+        "peekOfCode": "urlpatterns = [\n    # New List Endpoints\n    path(\"list/\", views.get_all_officers),\n    path(\"areas/\", views.get_all_areas),\n    # Existing CRUD\n    path(\"create/\", views.create_officer),\n    path(\"update/<int:officer_id>/\", views.update_officer),\n    path(\"delete/<int:officer_id>/\", views.delete_officer),\n    path(\"view/<int:officer_id>/\", views.view_officer),\n    path(\"login/\", views.login_officer),",
         "detail": "challan_system_back_end.officer.urls",
+        "documentation": {}
+    },
+    {
+        "label": "generate_officer_tokens",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def generate_officer_tokens(officer):\n    \"\"\"Generate JWT tokens for officer.\"\"\"\n    refresh = RefreshToken.for_user(officer)\n    return {\n        \"refresh\": str(refresh),\n        \"access\": str(refresh.access_token)\n    }\n# ------------------------------------------------------------\n# LIST DATA (NEW)\n# ------------------------------------------------------------",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_officers",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def get_all_officers(request):\n    # In production, you might want to restrict this to admins only\n    officers = Officer.objects.all().order_by(\"-created_at\")\n    serializer = OfficerSerializer(officers, many=True)\n    return Response(serializer.data)\n@api_view([\"GET\"])\ndef get_all_areas(request):\n    areas = Area.objects.all()\n    serializer = AreaSerializer(areas, many=True)\n    return Response(serializer.data)",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_areas",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def get_all_areas(request):\n    areas = Area.objects.all()\n    serializer = AreaSerializer(areas, many=True)\n    return Response(serializer.data)\n# ------------------------------------------------------------\n# CREATE OFFICER\n# ------------------------------------------------------------\n@api_view([\"POST\"])\n# @permission_classes([IsHighRank]) # Uncomment to enforce permission\ndef create_officer(request):",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "create_officer",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def create_officer(request):\n    serializer = CreateOfficerSerializer(data=request.data)\n    if serializer.is_valid():\n        officer = serializer.save()\n        return Response({\n            \"message\": \"Officer created successfully\",\n            \"officer_id\": officer.id,\n            \"plain_password\": officer.plain_password,\n        }, status=201)\n    return Response(serializer.errors, status=400)",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_officer",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def update_officer(request, officer_id):\n    try:\n        officer = Officer.objects.get(id=officer_id)\n    except Officer.DoesNotExist:\n        return Response({\"error\": \"Officer not found\"}, status=404)\n    serializer = CreateOfficerSerializer(officer, data=request.data, partial=True)\n    if serializer.is_valid():\n        updated = serializer.save()\n        return Response({\"message\": \"Officer updated successfully\"})\n    return Response(serializer.errors, status=400)",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_officer",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def delete_officer(request, officer_id):\n    try:\n        officer = Officer.objects.get(id=officer_id)\n    except Officer.DoesNotExist:\n        return Response({\"error\": \"Officer not found\"}, status=404)\n    officer.delete()\n    return Response({\"message\": \"Officer deleted successfully\"}, status=200)\n# ------------------------------------------------------------\n# VIEW OFFICER\n# ------------------------------------------------------------",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_officer",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def view_officer(request, officer_id):\n    try:\n        officer = Officer.objects.get(id=officer_id)\n    except Officer.DoesNotExist:\n        return Response({\"error\": \"Officer not found\"}, status=404)\n    serializer = OfficerSerializer(officer)\n    return Response(serializer.data)\n# ------------------------------------------------------------\n# LOGIN OFFICER\n# ------------------------------------------------------------",
+        "detail": "challan_system_back_end.officer.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_officer",
+        "kind": 2,
+        "importPath": "challan_system_back_end.officer.views",
+        "description": "challan_system_back_end.officer.views",
+        "peekOfCode": "def login_officer(request):\n    serializer = OfficerLoginSerializer(data=request.data)\n    if not serializer.is_valid():\n        return Response(serializer.errors, status=400)\n    email = serializer.validated_data[\"email\"]\n    password = serializer.validated_data[\"password\"]\n    try:\n        officer = Officer.objects.get(email=email)\n    except Officer.DoesNotExist:\n        return Response({\"error\": \"Invalid email/password\"}, status=400)",
+        "detail": "challan_system_back_end.officer.views",
         "documentation": {}
     },
     {
@@ -1073,6 +1629,15 @@
         "description": "challan_system_back_end.users.migrations.0002_remove_bike_stolen_status",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('users', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='bike',\n            name='stolen_status',\n        ),\n    ]",
         "detail": "challan_system_back_end.users.migrations.0002_remove_bike_stolen_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "challan_system_back_end.users.migrations.0003_alter_userbike_verification_status_and_more",
+        "description": "challan_system_back_end.users.migrations.0003_alter_userbike_verification_status_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('users', '0002_remove_bike_stolen_status'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='userbike',\n            name='verification_status',\n            field=models.CharField(choices=[('Pending', 'Pending'), ('Verified', 'Verified'), ('Rejected', 'Rejected')], default='Verified', max_length=20),\n        ),",
+        "detail": "challan_system_back_end.users.migrations.0003_alter_userbike_verification_status_and_more",
         "documentation": {}
     },
     {
@@ -1197,7 +1762,7 @@
         "kind": 6,
         "importPath": "challan_system_back_end.users.serializers",
         "description": "challan_system_back_end.users.serializers",
-        "peekOfCode": "class SignupSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    phone = serializers.CharField()\n    password = serializers.CharField(write_only=True)\n    confirm_password = serializers.CharField(write_only=True)\n    bike_number = serializers.CharField()\n    official_copy_url = serializers.CharField()       # File upload later\n    cnic_front_url = serializers.CharField()\n    cnic_back_url = serializers.CharField()\n    def validate(self, data):",
+        "peekOfCode": "class SignupSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    phone = serializers.CharField()\n    password = serializers.CharField(write_only=True)\n    confirm_password = serializers.CharField(write_only=True)\n    # --- ADDED FIELDS ---\n    cnic = serializers.CharField()\n    bike_registration_date = serializers.DateField() # Format: YYYY-MM-DD\n    # --------------------\n    bike_number = serializers.CharField()",
         "detail": "challan_system_back_end.users.serializers",
         "documentation": {}
     },
@@ -1233,7 +1798,7 @@
         "kind": 2,
         "importPath": "challan_system_back_end.users.views",
         "description": "challan_system_back_end.users.views",
-        "peekOfCode": "def generate_tokens(user):\n    refresh = RefreshToken.for_user(user)\n    return {\n        \"access\": str(refresh.access_token),\n        \"refresh\": str(refresh)\n    }\n# 1. SIGNUP\n@api_view([\"POST\"])\ndef signup(request):\n    serializer = SignupSerializer(data=request.data)",
+        "peekOfCode": "def generate_tokens(user):\n    # Fix: WebsiteUser uses 'user_id' as PK, but SimpleJWT defaults to 'id'.\n    # We manually build the token and set the claim to avoid AttributeError.\n    refresh = RefreshToken()\n    refresh[\"user_id\"] = user.user_id\n    return {\n        \"access\": str(refresh.access_token),\n        \"refresh\": str(refresh)\n    }\n# 1. SIGNUP",
         "detail": "challan_system_back_end.users.views",
         "documentation": {}
     },
@@ -1242,7 +1807,7 @@
         "kind": 2,
         "importPath": "challan_system_back_end.users.views",
         "description": "challan_system_back_end.users.views",
-        "peekOfCode": "def signup(request):\n    serializer = SignupSerializer(data=request.data)\n    if not serializer.is_valid():\n        return Response(serializer.errors, status=400)\n    email = serializer.validated_data[\"email\"]\n    phone = serializer.validated_data[\"phone\"]\n    password = serializer.validated_data[\"password\"]\n    bike_number = serializer.validated_data[\"bike_number\"]\n    official_copy_url = serializer.validated_data[\"official_copy_url\"]\n    cnic_front_url = serializer.validated_data[\"cnic_front_url\"]",
+        "peekOfCode": "def signup(request):\n    serializer = SignupSerializer(data=request.data)\n    if not serializer.is_valid():\n        return Response(serializer.errors, status=400)\n    # Extract validated data\n    email = serializer.validated_data[\"email\"]\n    phone = serializer.validated_data[\"phone\"]\n    password = serializer.validated_data[\"password\"]\n    cnic = serializer.validated_data[\"cnic\"]\n    bike_reg_date = serializer.validated_data[\"bike_registration_date\"]",
         "detail": "challan_system_back_end.users.views",
         "documentation": {}
     },

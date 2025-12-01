@@ -15,15 +15,21 @@ from .permissions import IsAuthenticatedUser
 
 
 def generate_tokens(user):
-    # Fix: WebsiteUser uses 'user_id' as PK, but SimpleJWT defaults to 'id'.
-    # We manually build the token and set the claim to avoid AttributeError.
     refresh = RefreshToken()
+    
+    # Add user_id to the refresh token
     refresh["user_id"] = user.user_id
+
+    # Get the access token from the refresh token
+    access = refresh.access_token
+
+    # CRITICAL: Manually add the user_id to the access token payload as well!
+    access["user_id"] = user.user_id 
+
     return {
-        "access": str(refresh.access_token),
+        "access": str(access),
         "refresh": str(refresh)
     }
-
 
 # 1. SIGNUP
 @api_view(["POST"])
